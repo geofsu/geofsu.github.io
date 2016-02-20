@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> - Articles</title>
+    <description></description>
+    <link>
+    </link>
+    
+      
+      <item>
+        <title>Writing a node module</title>
+        
+          <description>&lt;aside&gt;
+    &lt;ol&gt;
+        &lt;li&gt;&lt;a href=&quot;#one&quot;&gt;Module structure &amp; index.js&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#two&quot;&gt;Command line interface&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#three&quot;&gt;Using dependencies&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#four&quot;&gt;Parameters &amp; callbacks&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#five&quot;&gt;Publishing&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/aside&gt;
+</description>
+        
+        <pubDate>Mon, 21 Dec 2015 00:00:00 -0600</pubDate>
+        <link>
+        /posts/write-a-node-module</link>
+        <guid isPermaLink="true">/posts/write-a-node-module</guid>
+      </item>
+      
+    
+  </channel>
+</rss>

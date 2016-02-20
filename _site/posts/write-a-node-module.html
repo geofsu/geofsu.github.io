@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>91 degrees north</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta property="og:title" content="Writing a node module" />
+  <meta property="og:url" content="http://mapsam.com/posts/write-a-node-module" />
+  <meta property="og:description" content="
+    
+        Module structure & index.js
+        Command line interface
+        Using dependencies
+        Parameters & callbacks
+        Publishing
+    
+
+" />
+
+  <!-- thumbs up dude! -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/favicon/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16" />
+<meta name="application-name" content="Mapsam"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/images/favicon/mstile-144x144.png" />
+<!-- thumbs down -->
+
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+  
+  
+  
+  
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-52837030-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+<body background="../images/topobackground.png">
+
+<nav class="cf">
+	<ul class="nav-left">
+	<li>
+		<a class="current"  href="/">
+			91DEGREESNORTH
+		</a>
+	</li>
+	</ul>
+
+	<ul class="nav-right">
+		<li>
+			<a   href="/posts/">
+				Posts
+			</a>
+		</li>
+	
+		<li>
+			<a   href="/projects/">
+				Projects
+			</a>
+		</li>
+
+		<li>
+			<a   href="/resume/">
+				Resume
+			</a>
+		</li>
+
+
+	</ul>
+</nav>
+<ul class="connect">
+
+</ul>
+
+
+<article><h1 class="title">Writing a node module</h1>
+<p class="date">December 21, 2015</p>
+<aside>
+    <ol>
+        <li><a href="#one">Module structure & index.js</a></li>
+        <li><a href="#two">Command line interface</a></li>
+        <li><a href="#three">Using dependencies</a></li>
+        <li><a href="#four">Parameters & callbacks</a></li>
+        <li><a href="#five">Publishing</a></li>
+    </ol>
+</aside>
+
+<p>Writing a node module can be a bit complex. There are a number of subjective decisions that come into play, which can make learning from existing modules difficult. I find it easiest to start from the bare minimum, increasing functionality only when the need arrises.</p>
+
+<p>This post will go through some major components of a node module, including:</p>
+
+<ol>
+<li>a light-weight structure for your module and supporting files</li>
+<li>registering dependencies: using other node modules as helpers</li>
+<li>how to turn your module into a bash command so you can use it in your terminal</li>
+<li>how to deploy your module to <code>npm</code>&#39;s registry.</li>
+</ol>
+
+<p>Writing a node module requires Node.js on your computer. You can download that at <a href="https://nodejs.org">nodejs.org</a>.</p>
+
+<div id="one"></div>
+
+<h1>1. Module structure &amp; <code>index.js</code></h1>
+
+<p>The structure of a node module was the biggest hurdle for me to get over. There are a lot of files, and things linking back and forth. The major structure I like to use keeps things clean at the root level. For the rest of this post, let&#39;s assume we are creating a module called <code>timebuddy</code> that has the user input a date, and return in a javascript-friendly format (thanks, buddy). You can download this module <a href="https://github.com/mapsam/timebuddy">here</a>.</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">timebuddy</span><span class="o">/</span>       <span class="c"># root directory, named after your module</span>
+ <span class="o">-</span> <span class="n">index</span><span class="o">.</span><span class="n">js</span>      <span class="c"># main file</span>
+ <span class="o">-</span> <span class="n">package</span><span class="o">.</span><span class="n">json</span>  <span class="c"># information about your module and dependencies</span>
+ <span class="o">-</span> <span class="n">timebuddy</span>     <span class="c"># (optional) a file representing a bash command, used for CLI</span>
+ <span class="o">-</span> <span class="n">src</span><span class="o">/</span>          <span class="c"># (optional) additional custom files for keeping index.js clean</span>
+ <span class="o">-</span> <span class="n">test</span><span class="o">/</span>         <span class="c"># (optional) directory hosting all of your test related code</span>
+</code></pre></div>
+<h3><code>package.json</code></h3>
+
+<p>This file is unique to libraries using Node in some capacity. It doesn&#39;t mean a library is a module, though. In order to generate this file dynamically,  enter <code>npm init</code> into your terminal and follow the prompts. It can be changed later so don&#39;t feel pressure to get it all right at first.</p>
+
+<blockquote>
+<p>Every Node module requires a <code>package.json</code> but not every <code>package.json</code> file is for a unique module</p>
+</blockquote>
+
+<p>You can use Node in many different ways, and a <code>package.json</code> file purely denotes that you are using some Node libraries to make your job easier. A core piece of <code>package.json</code> is to list out dependencies.</p>
+
+<p>If you install a Node module or a project using Node, you&#39;ll notice a <code>node_modules/</code> directory that includes a fair number of libraries depending on the size of your project. This is generated dynamically by taking the list of dependencies from your <code>package.json</code> file, the version number, and installing from their repsective repositories. This way you can always keep things up to date as the authors make changes.</p>
+
+<h3>Creating <code>index.js</code></h3>
+
+<p>Create a file named <code>index.js</code>. This is where it all happens. Just like <code>index.html</code> being the priamary file in a webpage, <code>index.js</code> is the primary file in a Node module. Let&#39;s start by logging a generated time string to the user:</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">timebuddy</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">date</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">date</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">timebuddy</span><span class="p">();</span>
+</code></pre></div>
+<p>Let&#39;s execute this file. You can run it in your terminal by entering <code>node index.js</code>. Wham! The time! That&#39;s neat. This isn&#39;t particualarly &quot;node friendly&quot; though. In order to do that, we want to export timebuddy as a module, not just as a logging function.</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">timebuddy</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">timebuddy</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">date</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+    <span class="k">return</span> <span class="nx">date</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><em>Notice that we are returning <code>date</code> above, instead of logging it.</em></p>
+
+<h3><code>module.exports</code></h3>
+
+<p>What&#39;s going on here? What is this <code>module.exports</code> business? In order for Node to recognize <code>time</code> as a unique library, we want to export it to be used later. You&#39;ll notice if you run <code>node index.js</code> now, it will not log to the terminal. Hm. How can we get this to work? We need to do a couple of things:</p>
+
+<ol>
+<li>Use <code>timebuddy</code> in a file, which we can do through a</li>
+<li>command line interface</li>
+</ol>
+
+<div id="two"></div>
+
+<h1>2. Command line interface</h1>
+
+<p>In order to make this run effectively on the command line, we have to do a couple of things.</p>
+
+<ol>
+<li>create a file named <code>timebuddy</code> without a file extension. </li>
+<li>Add a new section to <code>package.json</code> for naming you bash command</li>
+<li><code>npm link</code> your module&#39;s <code>index.js</code> file to a bash command on your local machine</li>
+</ol>
+
+<h3><code>timebuddy</code> file</h3>
+
+<p>Add <code>#!/usr/bin/env node</code> to the top, which tells your computer to execute as a node file, which is why we don&#39;t need a <code>.js</code> extension. </p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="err">#</span><span class="o">!</span><span class="err">/usr/bin/env node</span>
+
+<span class="kd">var</span> <span class="nx">timebuddy</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./&#39;</span><span class="p">);</span> <span class="c1">// imports index.js functionality</span>
+
+<span class="kd">var</span> <span class="nx">now</span> <span class="o">=</span> <span class="nx">timebuddy</span><span class="p">();</span>         <span class="c1">// stores response in a variable</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">now</span><span class="p">);</span>              <span class="c1">// logs now to terminal</span>
+</code></pre></div>
+<h3>Add a <code>bin</code> command to <code>package.json</code></h3>
+
+<p>New bash command called <code>timebuddy</code> executes the file created above using node, denoted by the first line.</p>
+<div class="highlight"><pre><code class="language-JSON" data-lang="JSON"><span class="s2">&quot;bin&quot;</span><span class="err">:</span> <span class="p">{</span>
+    <span class="nt">&quot;timebuddy&quot;</span><span class="p">:</span> <span class="s2">&quot;./timebuddy&quot;</span>
+<span class="p">}</span><span class="err">,</span>
+</code></pre></div>
+<h3>Link your project to your local bash commands</h3>
+
+<p>This makes development easier, and will link all of your executing bash commands to <code>index.js</code> so you don&#39;t have to continually recreate the files. Run <code>npm link</code> in your terminal at the root of the project. This should ouput some information showing where <code>/usr/local/bin</code> is pointing to as a source executable.</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>npm link
+/usr/local/bin/timebuddy -&gt; /usr/local/lib/node_modules/timebuddy/timebuddy
+/usr/local/lib/node_modules/timebuddy -&gt; /Users/mapsam/github/timebuddy
+</code></pre></div>
+<p>Assuming no errors (typically related to permissions when writing to <code>/usr/local/bin</code> you should now be able to run <code>timebuddy</code> in your terminal and get the date back!</p>
+
+<p>What&#39;s really cool about the above, is that we are using <code>timebuddy</code> as a function to do some work for us, and logging it in a separate file. This means we can have different functionalty in our bash command versus the module, which just returns a value.</p>
+
+<div id="three"></div>
+
+<h1>3. Using dependencies</h1>
+
+<p>Dependencies are the foundation of Node modules. You can use other Node modules in your own in order to take functionality from other libraries. This keeps code clean, modular, and prevents developers from rewriting functionality across different modules.</p>
+
+<h3><code>require()</code></h3>
+
+<p>Similar to python where you can <code>import</code> different libraries, Node allows you to do this with <code>require</code> statements, which keeps your files clean from clutter of other, potentially huge libraries. We used <code>require</code> above to import our own work, which means you can require external libraries as well as internal.</p>
+
+<div id="four"></div>
+
+<h1>4. Parameters &amp; callbacks</h1>
+
+<h3>Parameters</h3>
+
+<p>To make <code>timebuddy</code> more robust, we want to allow the user to add some parameters to return the time in a particular format. First, we&#39;ll allow the user to add their own date string since maybe everyone won&#39;t need the time <em>right now</em> but the time at another point. It will look something like this:</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">timebuddy</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">timebuddy</span><span class="p">(</span><span class="nx">time</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">time</span> <span class="o">=</span> <span class="p">(</span><span class="nx">time</span> <span class="o">?</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">time</span><span class="p">)</span> <span class="o">:</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">());</span>
+    <span class="k">return</span> <span class="nx">time</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Update the bash version to include a date as a parameter:</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="err">#</span><span class="o">!</span><span class="err">/usr/bin/env node</span>
+
+<span class="kd">var</span> <span class="nx">timebuddy</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./&#39;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">christmas</span> <span class="o">=</span> <span class="nx">timebuddy</span><span class="p">(</span><span class="s1">&#39;12/25/2015&#39;</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">christmas</span><span class="p">);</span>
+</code></pre></div>
+<p>Now, instead of the time being today, we ONLY return the date of Christmas in 2015. That&#39;s not particularly helpful, but you can hopefully see where this is going. Our function in <code>index.js</code> is great - it returns an input. But our bash command is reliant on us <em>knowing</em> a date before we can run the <code>timebuddy()</code> function. How do we allow the user to specify inputs on the command line? </p>
+
+<h3>CLI parameters</h3>
+
+<p>Introduction <code>process.argv</code>. This is a built-in part of node that allows you to access different portions of the process during run-time. We can get parameters this way via <code>argv</code> which is an array representation of arguments passed. The first value is always <code>Node</code>, the second is _______, and the rest are order of parameters given by the user.</p>
+
+<p>If we want <code>timebuddy &quot;12/25/2015&quot;</code> to work, we&#39;ll have to capture the argument and pass it into our function.</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="err">#</span><span class="o">!</span><span class="err">/usr/bin/env node</span>
+
+<span class="kd">var</span> <span class="nx">timebuddy</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./&#39;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">userInput</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">time</span> <span class="o">=</span> <span class="nx">timebuddy</span><span class="p">(</span><span class="nx">userInput</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">time</span><span class="p">);</span>
+</code></pre></div>
+<p>Huzzah! Now we are taking user inputs and passing them into Node functions. What a time to be alive.</p>
+
+<h3>Callbacks</h3>
+
+<p>Sometimes callbacks are helpful ways of executing information and allowing the user to handle the reponse <em>only when the module has finished running</em>. Let&#39;s say <code>timebuddy</code> becomes particularly robust and takes a while to execute, we wouldn&#39;t want to let the user go forward until we have returned something useful. What if we error out? We should also tell the user that. Callbacks allow us to build this, so we can run code syncronously, in Node&#39;s asyncronous environment.</p>
+
+<p>Update <code>index.js</code> to take one more parameter, a callback.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&#39;use strict&#39;;
+
+module.exports = timebuddy;
+
+function timebuddy(time, callback) {
+    var time = (time ? new Date(time) : new Date());
+    callback(null, time);
+}
+</code></pre></div>
+<p>Notice how we pass <code>null</code> with our callback, it&#39;s good practice to pass in errors as the first parameter in Node. This allows the user to constantly check for errors. Right now, if we get to running the callback successfully, we want to pass a <code>null</code> error since everything looks great. Let&#39;s update our bash command now:</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="err">#</span><span class="o">!</span><span class="err">/usr/bin/env node</span>
+
+<span class="kd">var</span> <span class="nx">timebuddy</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./&#39;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">userInput</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+<span class="nx">timebuddy</span><span class="p">(</span><span class="nx">userInput</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="k">throw</span> <span class="nx">error</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>The above passes an anonymous function through as a callback with two parameters <code>error</code> and <code>response</code>. We can check if there is an error, and then handle the response.</p>
+
+<h3>Extra stuff</h3>
+
+<p>Writing a bunch of different functions and wanting to keep <code>index.js</code> short? I find it particularly helpful to write any extended functionality in the <code>src/</code> directory. Let&#39;s say we create a file called <code>month.js</code> in the <code>src/</code> directory and want to use it in <code>index.js</code>. Go ahead and create it, then import it using <code>require</code>.</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">timebuddy</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">month</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./src/month.js&#39;</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">timebuddy</span><span class="p">(</span><span class="nx">time</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">time</span> <span class="o">=</span> <span class="p">(</span><span class="nx">time</span> <span class="o">?</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">time</span><span class="p">)</span> <span class="o">:</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">());</span>
+    <span class="nx">callback</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="nx">time</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>This gives you the ability to break code apart into distinct groups of functionality. It&#39;s great for keeping code clean, easy to read, and testable. I highly recommend using <code>tap</code> for testing node modules.</p>
+
+<div id="five"></div>
+
+<h1>5. Publishing</h1>
+
+<p>Publishing your node module is the final way to give it a home at <a href="https://npmjs.org/registry/timebuddy">npmjs.org/registry/timebuddy</a>. Setting up your npm account is straightforward - make an account at <code>npmjs.org</code> - and add it as your default settings in <code>npm</code> on your computer. To publish your module, which will allow other people to <code>npm install timebuddy</code> from the registry, you can run <code>npm publish</code>. This will check for version changes and add all of the information from your <code>package.json</code> as data to the site. Don&#39;t forget to add a proper <code>README.md</code> file so people know what your module can do.</p>
+
+<hr>
+
+<p>That&#39;s it! I get a lot of my inspiration from the way Mapbox structures their modules. Simple, single functionality, and highly testable.</p>
+
+
+<a class="mono" href="/posts">&lBarr; back to posts</a></article>
+
+<script src="/js/mapsam.js"></script>
+</body>
+</html>
