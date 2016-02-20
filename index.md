@@ -22,8 +22,7 @@ Currently trying to get better with these technologies:
 
 * Javascript
 * [Mapbox](http://mapbox.com) Libraries
-* [Node.js](http://nodejs.org)
-
+* Node.js
 ### Let's get in touch and build things together!
 
 * Twitter: [91degn](http://twitter.com/91degn)

@@ -1,0 +1,6 @@
+---
+layout: post
+title: "HackIllinois"
+---
+
+This is a placeholder for my longer reflection on attending HackIllinois!
