@@ -42,6 +42,8 @@ p {
 a {
 	text-decoration:none;
 	color: $blue;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 article {
@@ -258,6 +260,9 @@ article {
   width:100%;
   @media (max-width: 850px) {
     text-align:center;
+  }
+  @media (min-width: 850px) {
+    text-align: center;
   }
 
   .project {

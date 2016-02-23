@@ -21,7 +21,9 @@ p {
 
 a {
   text-decoration: none;
-  color: #4682B4; }
+  color: #4682B4;
+  margin-left: auto;
+  margin-right: auto; }
 
 article {
   background-color: #ffffff;
@@ -174,6 +176,9 @@ article {
 .projects {
   width: 100%; }
   @media (max-width: 850px) {
+    .projects {
+      text-align: center; } }
+  @media (min-width: 850px) {
     .projects {
       text-align: center; } }
   .projects .project {
