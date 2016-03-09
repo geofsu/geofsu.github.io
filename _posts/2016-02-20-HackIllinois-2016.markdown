@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HackIllinois"
+title: "[Hackathons] HackIllinois"
 ---
 
 This is a placeholder for my longer reflection on attending HackIllinois!

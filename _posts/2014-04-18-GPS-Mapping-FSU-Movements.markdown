@@ -1,5 +1,5 @@
 ---
 layout: post
-title: "GPS Mapping Analysis of FSU Campus Movements"
+title: "[Projects] GPS Mapping Analysis of FSU Campus Movements"
 ---
 Hello!
