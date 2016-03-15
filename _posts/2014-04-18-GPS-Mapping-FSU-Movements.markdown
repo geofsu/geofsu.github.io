@@ -15,3 +15,5 @@ R was quite the language to learn and I got a lot of help from my professor to f
 Taking the counts, I was able to assign the routes scores and then simply changed the line thickness based on different internvals of counts, thus creating a scaled legend for the trips taken along certain paths. The lines simply lived in KML files that I loaded into Google Earth in order to visualize the lines. The resulting visualization is by no means something good to look at but it communicated and confirmed my hypothesis.
 
 ![Final Visualization Map](/images/posts/kml-map-final.png )
+
+The code 
