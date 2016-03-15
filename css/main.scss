@@ -55,7 +55,7 @@ article {
   > p, > blockquote {
     max-width: $read-width;
     img {
-      max-width: $max-width;
+      max-width: 40em;
     }
   }
   @media (max-width:  $max-width) {

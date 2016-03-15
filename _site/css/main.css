@@ -33,7 +33,7 @@ article {
   article > p, article > blockquote {
     max-width: 650px; }
     article > p img, article > blockquote img {
-      max-width: 50em; }
+      max-width: 40em; }
   @media (max-width: 50em) {
     article > p img {
       max-width: 100%; } }

@@ -6,7 +6,8 @@
   <meta charset="utf-8">
   <meta property="og:title" content="GPS Mapping Analysis of FSU Campus Movements" />
   <meta property="og:url" content="http://91degreesnorth.io/posts/GPS-Mapping-FSU-Movements" />
-  <meta property="og:description" content="Hello!
+  <meta property="og:description" content="This was a class project for my Map Analysis class. The assignment was very vague and consisted of making any kind of map that you wanted. For my project, I wanted to use GPS data of my movements around campus to see if there was any true correlation between the elevation of campus and my transportation choices.
+
 " />
 
   <!-- compass north -->
@@ -91,7 +92,19 @@
 
 <article><h1 class="title">GPS Mapping Analysis of FSU Campus Movements</h1>
 <p class="date">April 18, 2014</p>
-<p>Hello!</p>
+<p>This was a class project for my Map Analysis class. The assignment was very vague and consisted of making any kind of map that you wanted. For my project, I wanted to use GPS data of my movements around campus to see if there was any true correlation between the elevation of campus and my transportation choices.</p>
+
+<p>For the data collection I used the android App <a href="https://www.moves-app.com/">Moves</a>. This allowed me to collect all of my movements around campus as it ran in the background on my phone. From here, it would classify the transportation type based on the speed of my movement so I was able to parse out the difference between walking and biking very easily. Now that I had all of my data collected, you are able to export the data into KML format and it is separated into daily, weekly, or monthly files. From here, I used Google Earth to visualize the data points.</p>
+
+<p>From here, it was tricky and I needed to develop a way to count the points that were along each of the routes around campus stemming from my dorm. My first idea on the direction that I wanted to go was to use SQL in order to query a csv and count the points that were within bounding boxes of the routes. After about 20 hours of trying to teach myself the entirety of SQL in order to get that method working, I gave in and went back to the drawing board.</p>
+
+<p>After consulting with my professor, she suggested a route using <a href="https://www.r-project.org/">R</a>. I kept the same bounding box technique because I thought that was the most direct way for me to be able to count the GPS points along the routes. That part was tedious and I imagine there is a much better programmatic way to complete that task, especially using the Mapbox.js library.</p>
+
+<p>R was quite the language to learn and I got a lot of help from my professor to figure out the queries needed in order to make those counts. Once we were able to get some solid counts with the scripts, I was able to iterate through all of the bounding boxes and use each of the biking and walking data sets for the month.</p>
+
+<p>Taking the counts, I was able to assign the routes scores and then simply changed the line thickness based on different internvals of counts, thus creating a scaled legend for the trips taken along certain paths. The lines simply lived in KML files that I loaded into Google Earth in order to visualize the lines. The resulting visualization is by no means something good to look at but it communicated and confirmed my hypothesis.</p>
+
+<p><img src="/images/posts/kml-map-final.png" alt="Final Visualization Map" /></p>
 
 
 <a class="mono" href="/posts">&lBarr; back to posts</a></article>
