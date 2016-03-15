@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GPS Mapping Analysis of FSU Campus Movements"
+title: "[Projects] GPS Mapping Analysis of FSU Campus Movements"
 ---
 This was a class project for my Map Analysis class. The assignment was very vague and consisted of making any kind of map that you wanted. For my project, I wanted to use GPS data of my movements around campus to see if there was any true correlation between the elevation of campus and my transportation choices.
 

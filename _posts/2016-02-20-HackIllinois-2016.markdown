@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HackIllinois"
+title: "[Hackathons] HackIllinois"
 ---
 
 HackIllinois. What a weekend! To put it short, best hackathon I have been to. So well organized and it seemed like nothing went wrong. I don't know how they managed to pull that off. The sponsors that attended consisted of some of the best possible ones you can get at your hackathon. Talk about internship possibilities! The climate corporation was a very relevant company for the area and it was nice seeing an event that takes advantage of the area industry especially because of the lack of industry like that in Florida.
