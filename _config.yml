@@ -9,7 +9,7 @@ port:  4000
 encoding: utf-8
 
 # include Pygments for syntax highlighting
-highlighter: pygments
+highlighter: rouge
 
 # permalinks
 permalink: /posts/:title
