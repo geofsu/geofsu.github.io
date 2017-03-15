@@ -633,7 +633,15 @@ html {
         font-size: 1.75rem; }
       .body-wrap .featured .parentSummaryContainer .image {
         width: 33%;
-        height: 20rem; }
+        height: 20rem;
+        pointer-events: none;
+        border: 1.5px solid #BFBFBF;
+        border-radius: 2px;
+        box-shadow: 5px 5px 10px #BFBFBF; }
+      .body-wrap .featured .parentSummaryContainer .childReadMore {
+        font-family: "Work Sans", sans-serif;
+        font-size: 1.75rem;
+        text-decoration: underline; }
   .body-wrap .passions {
     font-size: 2rem;
     color: #BFBFBF;
@@ -669,6 +677,9 @@ html {
   overflow: hidden;
   opacity: 1;
   position: relative; }
+  .image:hover {
+    box-shadow: 3px 3px 15px #979797;
+    z-index: 10; }
 
 .projects {
   -ms-flex-order: 2;
