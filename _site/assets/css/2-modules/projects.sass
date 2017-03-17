@@ -8,11 +8,18 @@ $eczar: 'Eczar', serif
   background-color: #F6F6F8
   padding-left: 8rem
   padding-top: 3rem
+  margin-left: 350px
   width: 70%
   display: table
 
   .section
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
     .heading
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
       .title
         display: inline-block
         font-family: $work
@@ -26,27 +33,25 @@ $eczar: 'Eczar', serif
         font-size: 2.5rem
         color: #BFBFBF
         float: right
-    .project
-      .image
-      .title
-        font-size: 3rem
-        font-family: $work
-        font-weight: 400
-      .description
-        font-size:
-        font-family: $work
-        font-weight: 400
+    .container
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      .project
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        margin: 20px 20px 10px 0
+        width: 360px
+        .image
 
-.image
-  display: inline-block
-  margin: 1rem
-  width: 28%
-  height: 15rem
-  background-color: $bodyTextColor
-  background-size: cover
-  background-position-x: center
-  background-position-y: center
-  border-radius: 1rem
-  overflow: hidden
-  opacity: 1
-  position: relative
+        .title
+          font-size: 3rem
+          font-family: $work
+          font-weight: 400
+          padding-left: 10px
+        .description
+          font-size:
+          font-family: $work
+          font-weight: 400
+          padding-left: 10px

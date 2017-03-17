@@ -487,15 +487,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
-.home-wrap {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  min-height: 100vh;
-  -ms-flex-pack: start;
-      justify-content: flex-start; }
-
 .project-wrap {
   display: -ms-flexbox;
   display: flex;
@@ -522,32 +513,17 @@ html {
     background: #B0E3F8; }
 
 .head-wrap {
-  -ms-flex-order: 1;
-      order: 1;
   z-index: 10;
   background: white;
-  -ms-flex: 0 0 350px;
-      flex: 0 0 350px;
   padding: 30px 0;
-  box-shadow: 4px 0px 10px -2px #b3b3b3; }
-  .head-wrap .head-fixed {
-    position: fixed;
-    width: 350px; }
-  .head-wrap .profile-pic {
-    overflow: hidden;
-    text-indent: 101%;
-    white-space: nowrap;
-    background-image: url(/assets/img/headshot_2.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-height: 150px;
-    background-size: contain;
-    padding-right: 2rem;
-    background-color: white;
-    margin: 0 0 0 60px;
-    height: 200px; }
-  .head-wrap .menu {
-    display: none; }
+  box-shadow: 4px 0px 10px -2px #b3b3b3;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100vh;
+  width: 350px;
+  position: fixed; }
   .head-wrap .site-nav ul {
     list-style: none;
     font-family: "Work Sans", sans-serif;
@@ -560,88 +536,132 @@ html {
       font-size: 2rem; }
       .head-wrap .site-nav ul li:last-child {
         margin-bottom: 0; }
-  .head-wrap .firstName {
-    font-family: "Eczar", serif;
-    font-weight: normal;
-    color: #444444;
-    font-size: 5rem;
-    color: black;
-    margin: 25px 0 0 60px; }
-  .head-wrap .lastName {
-    font-family: "Eczar", serif;
-    font-weight: normal;
-    color: #444444;
-    font-size: 5rem;
-    color: black;
-    margin: 0 0 0 60px; }
-  .head-wrap .job {
-    font-family: "Work Sans", sans-serif;
-    font-size: 2rem;
-    margin: 45px 0 0 60px;
-    font-weight: 300; }
-  .head-wrap .jobOne {
-    font-family: "Work Sans", sans-serif;
-    font-size: 2rem;
-    margin: 15px 0 0 60px;
-    font-weight: 400; }
-  .head-wrap .jobTwo {
-    font-family: "Work Sans", sans-serif;
-    font-size: 2rem;
-    margin: 10px 0 0 60px;
-    font-weight: 400; }
-  .head-wrap .oneLiner {
-    font-family: "Work Sans", sans-serif;
-    word-wrap: break-word;
-    font-size: 1.8rem;
-    margin: 60px 20px 0 60px;
-    padding-right: 20px;
-    font-weight: 400; }
-  .head-wrap .icons {
-    align: center;
-    padding-top: 30px;
-    padding-left: 60px;
-    padding-right: 30px; }
-  .head-wrap i {
-    font-size: 20pt;
-    align: center;
-    margin: 10px 40px 5px 10px; }
+  .head-wrap .profile-pic {
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+    background-image: url(/assets/img/headshot_3.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-height: 150px;
+    background-size: contain;
+    padding-right: 2rem;
+    background-color: white;
+    margin: 0 0 0 60px;
+    height: 20%; }
+  .head-wrap .menu {
+    display: none; }
+  .head-wrap .sidebar-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: 40%; }
+    .head-wrap .sidebar-content .firstName {
+      font-family: "Eczar", serif;
+      font-weight: normal;
+      color: #444444;
+      font-size: 5rem;
+      color: black;
+      margin: 25px 0 0 60px; }
+    .head-wrap .sidebar-content .lastName {
+      font-family: "Eczar", serif;
+      font-weight: normal;
+      color: #444444;
+      font-size: 5rem;
+      color: black;
+      margin: 0 0 0 60px; }
+    .head-wrap .sidebar-content .job {
+      font-family: "Work Sans", sans-serif;
+      font-size: 2rem;
+      margin: 45px 0 0 60px;
+      font-weight: 300; }
+    .head-wrap .sidebar-content .jobOne {
+      font-family: "Work Sans", sans-serif;
+      font-size: 2rem;
+      margin: 15px 0 0 60px;
+      font-weight: 400; }
+    .head-wrap .sidebar-content .jobTwo {
+      font-family: "Work Sans", sans-serif;
+      font-size: 2rem;
+      margin: 10px 0 0 60px;
+      font-weight: 400; }
+    .head-wrap .sidebar-content .oneLiner {
+      font-family: "Work Sans", sans-serif;
+      word-wrap: break-word;
+      font-size: 1.8rem;
+      margin: 60px 20px 0 60px;
+      padding-right: 20px;
+      font-weight: 400; }
+    .head-wrap .sidebar-content .iconGroup {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      align: center;
+      margin: 20px 0 0 60px;
+      width: 240px; }
+    .head-wrap .sidebar-content i {
+      font-size: 20pt;
+      align: center;
+      margin: 10px 40px 5px 10px; }
 
 .body-wrap {
   -ms-flex-order: 2;
       order: 2;
-  position: relative;
+  margin-left: 350px;
   padding-left: 8rem;
   background-color: #F6F6F8; }
   .body-wrap .featured {
     padding-top: 3rem;
     color: #BFBFBF;
     font-family: "Work Sans", sans-serif;
-    font-size: 2rem; }
+    font-size: 2rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
     .body-wrap .featured .featuredTitle {
       font-family: "Work Sans", sans-serif;
       font-weight: 550;
       font-size: 4rem;
-      color: #444444; }
+      color: #444444;
+      width: 90%; }
     .body-wrap .featured .parentSummaryContainer {
-      padding-top: 3rem; }
-      .body-wrap .featured .parentSummaryContainer .childFeaturedSummary {
-        display: inline-block;
-        vertical-align: top;
-        color: #444444;
-        width: 55%;
-        font-family: "Work Sans", sans-serif;
-        font-size: 1.75rem; }
+      padding-top: 3rem;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .body-wrap .featured .parentSummaryContainer .text {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        width: 50%; }
+        .body-wrap .featured .parentSummaryContainer .text .childFeaturedSummary {
+          vertical-align: top;
+          color: #444444;
+          width: 95%;
+          font-family: "Work Sans", sans-serif;
+          font-size: 1.75rem; }
+        .body-wrap .featured .parentSummaryContainer .text .childReadMore {
+          font-family: "Work Sans", sans-serif;
+          font-size: 1.75rem;
+          text-decoration: underline;
+          vertical-align: bottom;
+          padding-top: 4rem; }
       .body-wrap .featured .parentSummaryContainer .image {
-        width: 33%;
+        width: 400px;
         height: 20rem;
         pointer-events: none;
         border: 1.5px solid #BFBFBF;
         border-radius: 2px;
         box-shadow: 5px 5px 10px #BFBFBF; }
-      .body-wrap .featured .parentSummaryContainer .childReadMore {
-        font-family: "Work Sans", sans-serif;
-        font-size: 1.75rem;
-        text-decoration: underline; }
   .body-wrap .passions {
     font-size: 2rem;
     color: #BFBFBF;
@@ -663,11 +683,26 @@ html {
       font-size: 1.75rem;
       padding-right: 10%;
       padding-bottom: 3rem; }
+    .body-wrap .passions .example {
+      color: #BFBFBF;
+      font-family: "Work Sans", sans-serif;
+      font-size: 2.25rem;
+      text-align: center;
+      margin-right: 14rem;
+      padding-bottom: 1rem; }
+    .body-wrap .passions .container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin-right: 12rem; }
+      .body-wrap .passions .container .child {
+        width: 360px; }
 
 .image {
-  display: inline-block;
   margin: 1rem;
-  width: 28%;
   height: 15rem;
   background-color: #444444;
   background-size: cover;
@@ -688,42 +723,61 @@ html {
   background-color: #F6F6F8;
   padding-left: 8rem;
   padding-top: 3rem;
+  margin-left: 350px;
   width: 70%;
   display: table; }
-  .projects .section .heading .title {
-    display: inline-block;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 550;
-    font-size: 4rem;
-    color: #979797; }
-  .projects .section .heading .subtitle {
-    display: inline-block;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 350;
-    font-size: 2.5rem;
-    color: #BFBFBF;
-    float: right; }
-  .projects .section .project .title {
-    font-size: 3rem;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400; }
-  .projects .section .project .description {
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400; }
-
-.image {
-  display: inline-block;
-  margin: 1rem;
-  width: 28%;
-  height: 15rem;
-  background-color: #444444;
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: center;
-  border-radius: 1rem;
-  overflow: hidden;
-  opacity: 1;
-  position: relative; }
+  .projects .section {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .projects .section .heading {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .projects .section .heading .title {
+        display: inline-block;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 550;
+        font-size: 4rem;
+        color: #979797; }
+      .projects .section .heading .subtitle {
+        display: inline-block;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 350;
+        font-size: 2.5rem;
+        color: #BFBFBF;
+        float: right; }
+    .projects .section .container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .projects .section .container .project {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin: 20px 20px 10px 0;
+        width: 360px; }
+        .projects .section .container .project .title {
+          font-size: 3rem;
+          font-family: "Work Sans", sans-serif;
+          font-weight: 400;
+          padding-left: 10px; }
+        .projects .section .container .project .description {
+          font-family: "Work Sans", sans-serif;
+          font-weight: 400;
+          padding-left: 10px; }
 
 .project-content {
   -ms-flex-order: 2;
@@ -731,7 +785,8 @@ html {
   position: relative;
   background-color: #F6F6F8;
   padding-left: 8rem;
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  margin-left: 350px; }
   .project-content .intro .heading {
     font-size: 5rem;
     font-family: "Work Sans", sans-serif;
