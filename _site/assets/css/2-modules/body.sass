@@ -4,7 +4,7 @@ $eczar: 'Eczar', serif
 
 .body-wrap
   order: 2
-  position: relative
+  margin-left: 350px
   padding-left: 8rem
   background-color: #F6F6F8
   // background-color: pink
@@ -14,30 +14,45 @@ $eczar: 'Eczar', serif
     color: #BFBFBF
     font-family: $work
     font-size: 2rem
-
+    display: flex
+    flex-direction: column
+    .latestWork
     .featuredTitle
       font-family: $work
       font-weight: 550
       font-size: 4rem
       color: $bodyTextColor
-
+      width: 90%
 
     .parentSummaryContainer
       padding-top: 3rem
-      .childFeaturedSummary
-        display: inline-block
-        vertical-align: top
-        color: $bodyTextColor
-        width: 55%
-        font-family: $work
-        font-size: 1.75rem
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      .text
+        display: flex
+        flex-direction: column
+        width: 50%
+        .childFeaturedSummary
+          vertical-align: top
+          color: $bodyTextColor
+          width: 95%
+          font-family: $work
+          font-size: 1.75rem
+        .childReadMore
+          font-family: $work
+          font-size: 1.75rem
+          text-decoration: underline
+          vertical-align: bottom
+          padding-top: 4rem
       .image
-        width: 33%
+        width: 400px
         height: 20rem
-      .childReadMore
-        font-family: $work
-        font-size: 1.75rem
-        text-decoration: underline
+        pointer-events: none
+        border: 1.5px solid #BFBFBF
+        border-radius: 2px
+        box-shadow: 5px 5px 10px #BFBFBF
+
 
 
 
@@ -62,25 +77,31 @@ $eczar: 'Eczar', serif
       font-size: 1.75rem
       padding-right: 10%
       padding-bottom: 3rem
-    .imageContainer
-      // .image
-      //   display: inline-block
-      //   margin: 1rem
-      //   width: 28%
-      //   height: 15rem
-      //   background-color: $bodyTextColor
-      //   background-size: cover
-      //   background-position-x: center
-      //   background-position-y: center
-      //   border-radius: 1rem
-      //   overflow: hidden
-      //   opacity: 1
-      //   position: relative
+    .example
+      color: #BFBFBF
+      font-family: $work
+      font-size: 2.25rem
+      // text-decoration: underline
+      text-align: center
+      margin-right: 14rem
+      padding-bottom: 1rem
+    .container
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      margin-right: 12rem
+      .child
+        width: 360px
+
+
+        a
+          // width: 150px
+
+
 
 .image
-  display: inline-block
+  // display: inline-block
   margin: 1rem
-  width: 28%
   height: 15rem
   background-color: $bodyTextColor
   background-size: cover
