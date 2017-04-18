@@ -1,5 +1,6 @@
 @import "0-tools/bourbon/bourbon";
 @import "0-tools/normalize";
+// @import "0-tools/font-awesome-4.70/font-awesome";
 
 @import "1-base/base";
 
@@ -9,3 +10,5 @@
 @import "2-modules/body";
 @import "2-modules/projects";
 @import "2-modules/standalone";
+@import "2-modules/mobile-footer";
+@import "2-modules/mobile-nav";

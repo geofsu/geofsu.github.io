@@ -2,39 +2,173 @@ $bodyTextColor: #444444
 $work: 'Work Sans', sans-serif
 $eczar: 'Eczar', serif
 
-.project-content
-  order: 2
-  position: relative
-  background-color: #F6F6F8
-  padding-left: 8rem
-  padding-top: 3rem
+.stand_alone
+  display: flex
+  flex-direction: row
 
-  .intro
-    .heading
-      font-size: 5rem
-      font-family: $work
-      font-weight: 550
-    ul
-      list-style: none
-      padding-left: 0
-    .date
-      font-size: 2rem
-      font-family: $work
-      font-weight: 300
-    .description
-      font-size: 2rem
-      font-family: $work
-      font-weight: 300
-    .skills
-      font-size: 2rem
-      font-family: $work
-      font-weight: normal
-      padding-top: 1rem
-    .summary
-      font-size: 2.5rem
-      font-family: $eczar
-      font-weight: 200
-      padding-top: 3rem
-      padding-left: 10%
-      padding-right: 10%
-      text-align: center
+  .mobile-nav
+    display: none
+
+  .project-content
+    position: relative
+    background-color: #F6F6F8
+    padding-left: 8rem
+    padding-top: 3rem
+    margin-left: 350px
+    padding-right: 3rem
+
+    .intro
+      .heading
+        font-size: 5rem
+        font-family: $work
+        font-weight: 550
+      ul
+        list-style: none
+        padding-left: 0
+      .date
+        font-size: 2rem
+        font-family: $work
+        font-weight: 300
+      .description
+        font-size: 2rem
+        font-family: $work
+        font-weight: 300
+      .skills
+        font-size: 2rem
+        font-family: $work
+        font-weight: normal
+        padding-top: 1rem
+      .summary
+        font-size: 2.5rem
+        font-family: $eczar
+        font-weight: 200
+        padding-top: 3rem
+        padding-left: 10%
+        padding-right: 10%
+        text-align: center
+    .mainBody
+      display: flex
+      flex-direction: column
+      padding-right: 2rem
+      padding-bottom: 5rem
+      ul
+        margin-left: 3rem
+        list-style-type: none
+        li
+          padding-bottom: 1.5rem
+          .listUnderline
+            text-decoration: underline
+      .bodyText
+        a
+          font-weight: bold
+      .bodySectionHeader
+        font-size: 2.75rem
+        font-family: $work
+        font-weight: 400
+      .imageSetContainer
+        display: flex
+        flex-direction: row
+        padding-top: 3rem
+        padding-bottom: 3rem
+        justify-content: space-around
+        padding-left: 6rem
+        padding-right: 6rem
+        .imageSet
+          width: auto
+          height: 30rem
+        .caption
+
+      .imageLargeContainer
+        padding: 3rem 3rem 3rem 3rem
+        width: auto
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: space-around
+        align-items: center
+        .imageLarge
+          width: 60%
+          height: auto
+          img
+            width: 100%
+            height: 100%
+            border: grey solid 1px
+
+        .caption
+          font-style: $work
+          font-size: 1.75rem
+          width: 80%
+          font-weight: lighter
+          text-align: center
+
+
+      .imageWideContainer
+        padding: 3rem 3rem 3rem 3rem
+        width: auto
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        .imageWide
+          width: 80%
+          height: 100%
+
+      .documentLinkContainer
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        .documentLink
+          width: 35%
+          height: auto
+          a
+            img
+              width: 100%
+              height: 100%
+          // &:hover
+          //   // color: white
+          //   box-shadow: 3px 3px 15px #979797
+          //   // opacity: 15%
+          //   z-index: 10
+
+
+  .footer
+    display: none
+
+@media (max-width: $break-width-mobile)
+
+  .stand_alone
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+
+    .head-wrap
+      display: none
+
+    .mobile-nav
+      display: block
+      z-index: 3
+      .header
+        margin-left: 0px
+        box-shadow: 0px 8px 15px -2px #b3b3b3
+        width: 775px
+
+
+    .project-content
+      width: 700px
+      margin-left: -40px
+
+      .mainBody
+        .imageSetContainer
+          flex-direction: row
+          flex-wrap: wrap
+          .imageSet
+            width: auto
+            height: 30rem
+            padding: 1rem 1rem 1rem 1rem
+
+
+    .footer
+      display: block
+      width: 775px
+      margin-top: 3rem

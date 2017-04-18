@@ -1,9 +1,9 @@
+$break-height-low-res: 780px
+$break-width-mobile: 775px
+
 .home-wrap
-  // display: flex
-  // flex-direction: row
-  // // min-height: 100vh
-  // // border: .3rem solid red
-  // justify-content: flex-start
+  display: flex
+  flex-direction: row
 
 .project-wrap
   display: flex
@@ -18,3 +18,10 @@
   justify-content: flex-start
     // @media (max-width: 775px)
     //   display: block
+
+@media (max-width: $break-width-mobile)
+  .home-wrap
+    display: flex
+    flex-direction: column
+    .body-wrap
+      margin-left: auto

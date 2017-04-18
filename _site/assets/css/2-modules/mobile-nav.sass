@@ -1,0 +1,70 @@
+.header
+  display: block
+  margin-left: -80px
+  box-shadow: 0px 8px 15px -2px #b3b3b3
+  padding-bottom: 30px
+  padding-top: 20px
+
+  .site-nav
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    .link
+      width: 30%
+      text-align: center
+      &:first-child
+        border-right: solid #c6c6c6
+        border-width: thin
+
+      &:last-child
+        border-left: solid #c6c6c6
+        border-width: thin
+
+      a
+        font-size: 18pt
+
+
+
+  .container
+    display: flex
+    flex-direction: row
+    padding-top: 5rem
+
+    .profile
+      display: flex
+      flex-direction: column
+      width: 40%
+      padding-left: 40px
+      justify-content: center
+      .profile-pic
+        +hide-text
+        background:
+          image: url(/assets/img/headshot_3.png)
+          repeat: no-repeat
+          height: 150px
+          size: contain
+        // width: 40%
+        height: 100px
+        margin-left: 15%
+
+      .name
+        padding-left: 15px
+        margin-top: 20px
+        .firstName
+          font-size: 20pt
+          font-family: $eczar
+        .lastName
+          font-size: 20pt
+          font-family: $eczar
+          padding-top: -30px
+
+
+    .sidebar-content
+      width: 60%
+      padding-right: 30px
+      font-size: 1.5rem
+      font-family: $work
+      .job
+      .jobOne
+      .jobTwo
+      .oneLiner
