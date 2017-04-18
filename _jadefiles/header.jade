@@ -1,27 +1,31 @@
-nav.site-nav
+mixin nav-content()
   ul
     li: a(href="/") Home
     // li: a(href="/blog") Blog
     li: a(href="/projects") Projects
     // li: a(href="/research") Research
     li: a(href="/resume.pdf") Resume
+
+
+.mobile-nav
+  +nav-content()
+
+header
+  nav.site-nav
+    +nav-content()
+      
+  h1.profile-pic Ben Thornton
+        
+  .sidebar-content
+    h1.firstName Ben 
+    h1.lastName Thornton
     
-h1.profile-pic Ben Thornton
+    h2.job Currently:
+    h2.jobOne <b>GIS Developer</b> at <b>FGA</b>
+    h2.jobTwo <b>GIS Researcher</b> at <b>FREAC</b>
 
-.menu
-  a()
-    i.fa.fa-bars
-
-.sidebar-content
-  h1.firstName Ben 
-  h1.lastName Thornton
-  
-  h2.job Currently:
-  h2.jobOne <b>GIS Developer</b> at <b>FGA</b>
-  h2.jobTwo <b>GIS Researcher</b> at <b>FREAC</b>
-
-  h2.oneLiner I use my diverse skill set to have impact on my <b>passions</b>.
-  
+    h2.oneLiner I use my diverse skill set to have impact on my <b>passions</b>.
+    
   .iconGroup
     .icon
       a(href='https://twitter.com/91degN')
@@ -42,4 +46,4 @@ h1.profile-pic Ben Thornton
       a(href='mailto:benjaminwthornton@gmail.com')
         i.fa.fa-envelope-o
     
-        
+  

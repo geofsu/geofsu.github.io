@@ -1,3 +1,29 @@
+.header
+  .site-nav
+    .link
+      a(href="/") Home
+    //- .link
+      // a(href="/blog") Blog
+    .link
+      a(href="/projects") Projects
+    //- .link
+      // a(href="/research") Research
+    .link
+      a(href="/resume.pdf") Resume
+  //- .container    
+  //-   .profile
+  //-     .profile-pic Ben Thornton
+  //-     .name
+  //-       .firstName Ben Thornton
+  //-       //- .lastName Thornton 
+  //-         
+  //-   .sidebar-content    
+  //-     .job Currently:
+  //-     .jobOne <b>GIS Developer</b> at <b>FGA</b>
+  //-     .jobTwo <b>GIS Researcher</b> at <b>FREAC</b>
+  //-     br
+  //-     .oneLiner I use my diverse skill set to have impact on my <b>passions</b>.
+
 .section
   .heading 
     .title Featured
@@ -8,16 +34,7 @@
         .image(style='background-image: url("../assets/img/blog_uber_cities_tile.png")')
       .title Uber Cities
       .description Reflections on what opening Uber data means for cities.
-    .project  
-      a(href="/projects/floatie.html")
-        .image(style='background-image: url("../assets/img/placeholder.png")')
-      .title Placeholder
-      .description Lorum Ipsum
-    .project  
-      a(href="/projects/floatie.html")
-        .image(style='background-image: url("../assets/img/placeholder.png")')
-      .title Placeholder
-      .description Lorum Ipsum
+
     
 br
 
@@ -29,17 +46,126 @@ hr
     .subtitle Spatial Analysis and Visualizations
   .container
     .project  
-      a(href="./projects/floatie.html")
-        .image(style='background-image: url("../assets/img/placeholder.png")')
-      .title Map 1
-      .description Lorum Ipsum
+      a(href="../projects/bivariatemapping.html")
+        .image(style='background-image: url("../assets/img/bivariate_mapping_tile.png")')
+      .title Bivariate Mapping
+      .description Using color theory to maximize readibility of maps.
     .project  
-      a(href="./projects/floatie.html")
-        .image(style='background-image: url("../assets/img/placeholder.png")')
-      .title Map 2
-      .description Lorum Ipsum
+      a(href="../projects/bivariatelegend.html")
+        .image(style='background-image: url("../assets/img/bivariate_statistical_legends_tile.png")')
+      .title Bivariate Statistical Legends
+      .description Adding scatterplots to legends to enhance map and data literacy.
     .project  
-      a(href="./projects/floatie.html")
-        .image(style='background-image: url("../assets/img/placeholder.png")')
-      .title Placeholder
-      .description Lorum Ipsum
+      a(href="../projects/lulc.html")
+        .image(style='background-image: url("../assets/img/lulc_tile.png")')
+      .title Land Use / Land Cover Symbology and Visualizations
+      .description New symbology for looking at LU/LC relationships.
+    .project  
+      a(href="../projects/fgatilemap.html")
+        .image(style='background-image: url("../assets/img/fga_tile_map_tile.png")')
+      .title FGA Giant Tiled Floor Map
+      .description A project to bring a giant map to all classrooms. 
+br
+
+hr
+
+.section
+  .heading 
+    .title Community Building
+    .subtitle Hackathon and Technology Community Building
+  .container
+    .project  
+      a(href="../projects/floatie.html")
+        .image(style='background-image: url("../assets/img/floatie_tile.png")')
+      .title Floatie
+      .description A Florida Hackers Conference
+    .project  
+      a(href="../projects/hackfsu16.html")
+        .image(style='background-image: url("../assets/img/hackfsu_tile.png")')
+      .title HackFSU 2016
+      .description Florida State University Hackathon
+    .project  
+      a(href="../projects/floridahackers.html")
+        .image(style='background-image: url("../assets/img/floridahackers_tile.png")')
+      .title Florida Hackers
+      .description A student tech community in Florida and some of the story behind it. 
+      
+br
+
+hr
+      
+.section
+  .heading 
+    .title Urban Planning
+    .subtitle Projects Centered Around Cities and Transportation
+  .container
+    .project  
+      a(href="../projects/uxbustransit.html")
+        .image(style='background-image: url("../assets/img/ux_bus_transit_tile.png")')
+      .title The UX of Bus Transit
+      .description An walkthrough of user interactions for bus transit.
+    //- .project  
+    //-   a(href="./hackfsu16.html")
+    //-     .image(style='background-image: url("../assets/img/placeholder.png")')
+    //-   .title HackFSU 2016
+    //-   .description Florida State University Hackathon
+    //- .project  
+    //-   a(href="./floatie.html")
+    //-     .image(style='background-image: url("../assets/img/placeholder.png")')
+    //-   .title Placeholder
+    //-   .description Lorum Ipsum
+    
+br
+//- 
+//- hr
+//- 
+//- .section
+//-   .heading 
+//-     .title Development
+//-     .subtitle Programming Related Projects of all Kinds
+//-   .container
+//-     .project  
+//-       a(href="../projects/thissite.html")
+//-         .image(style='background-image: url("../assets/img/ux_bus_transit_tile.png")')
+//-       .title Building this website
+//-       .description An overview of this site and how it is built.
+//-     
+//- br
+//- 
+//- hr
+//- 
+//- .section
+//-   .heading 
+//-     .title Design
+//-     .subtitle Projects surrounding design of any kind
+//-   .container
+//-     .project  
+//-       a(href="../projects/thissite.html")
+//-         .image(style='background-image: url("../assets/img/ux_bus_transit_tile.png")')
+//-       .title Building this website
+//-       .description An overview of this site and how it is built.
+//-   
+
+.footer
+  hr
+  .madeWith
+    p Built in Tallahassee, FL
+  .iconGroup
+    .icon
+      a(href='https://twitter.com/91degN')
+        i.fa.fa-twitter
+    .icon
+      a(href='https://www.instagram.com/91degreesnorth/')
+        i.fa.fa-instagram
+    .icon
+      a(href='https://www.linkedin.com/in/benjaminwthornton')
+        i.fa.fa-linkedin-square
+    .icon
+      a(href='https://github.com/geofsu')
+        i.fa.fa-github
+    .icon
+      a(href='https://medium.com/@91degreesnorth')
+        i.fa.fa-medium
+    .icon
+      a(href='mailto:benjaminwthornton@gmail.com')
+        i.fa.fa-envelope-o    

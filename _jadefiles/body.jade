@@ -1,3 +1,31 @@
+.header
+  .site-nav
+    .link
+      a(href="/") Home
+    //- .link
+      // a(href="/blog") Blog
+    .link
+      a(href="/projects") Projects
+    //- .link
+      // a(href="/research") Research
+    .link
+      a(href="/resume.pdf") Resume
+  .container    
+    .profile
+      .profile-pic Ben Thornton
+      .name
+        .firstName Ben Thornton
+        //- .lastName Thornton 
+          
+    .sidebar-content    
+      .job Currently:
+      .jobOne <b>GIS Developer</b> at <b>FGA</b>
+      .jobTwo <b>GIS Researcher</b> at <b>FREAC</b>
+      br
+      .oneLiner I use my diverse skill set to have impact on my <b>passions</b>.
+  
+
+
 .featured 
   .latestWork Latest Work
   
@@ -24,14 +52,14 @@ hr
   .summary Maps are an incredible way to communicate actionable information with data. They can save lives and help communicate a pattern that no spreadsheet can. Creating cutting edge techniques to better communicate spatial data is a major focus of mine. Some of my projects and writings on Cartography are below.
   .container
     .child
-      a(href="./projects/floatie.html")
-        .image#Cartography1(style='background-image: url("../assets/img/placeholder.png")')
+      a(href="./projects/bivariatemapping.html")
+        .image#Cartography1(style='background-image: url("../assets/img/bivariate_mapping_tile.png")')
     .child
-      a(href="./projects/floatie.html")
-        .image#Cartography2(style='background-image: url("../assets/img/placeholder.png")')
-    //- .child
-    //-   a(href="./projects/floatie.html")
-    //-     .image#Cartography3(style='background-image: url("../assets/img/placeholder.png")')
+      a(href="./projects/lulc.html")
+        .image#Cartography2(style='background-image: url("../assets/img/lulc_tile.png")')
+    .child
+      a(href="./projects/fgatilemap.html")
+        .image#Cartography3(style='background-image: url("../assets/img/fga_tile_map_tile.png")')
     
 
   br
@@ -64,11 +92,35 @@ hr
   .summary Finding problems with how to visualize 2 data sets or how to normalize data into uniform spatial units are challenges affecting huge groups of people. Creating soluations that make it easier has shown how improving a small tool can make a great impact. 
   .container
     .child
-      a(href="./projects/floatie.html")
-        .image#Research1(style='background-image: url("../assets/img/placeholder.png")')
+      a(href="./projects/uxbustransit.html")
+        .image#Research1(style='background-image: url("../assets/img/ux_bus_transit_tile.png")')
     .child
-      a(href="./projects/floatie.html")
-        .image#Research2(style='background-image: url("../assets/img/placeholder.png")')
+      a(href="./projects/bivariatelegend.html")
+        .image#Research2(style='background-image: url("../assets/img/bivariate_statistical_legends_tile.png")')
     //- .child  
     //-   a(href="./projects/floatie.html")
     //-     .image#Research3(style='background-image: url("../assets/img/placeholder.png")')
+
+.footer
+  hr
+  .madeWith
+    p Built in Tallahassee, FL
+  .iconGroup
+    .icon
+      a(href='https://twitter.com/91degN')
+        i.fa.fa-twitter
+    .icon
+      a(href='https://www.instagram.com/91degreesnorth/')
+        i.fa.fa-instagram
+    .icon
+      a(href='https://www.linkedin.com/in/benjaminwthornton')
+        i.fa.fa-linkedin-square
+    .icon
+      a(href='https://github.com/geofsu')
+        i.fa.fa-github
+    .icon
+      a(href='https://medium.com/@91degreesnorth')
+        i.fa.fa-medium
+    .icon
+      a(href='mailto:benjaminwthornton@gmail.com')
+        i.fa.fa-envelope-o    

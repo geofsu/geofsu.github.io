@@ -1,5 +1,8 @@
 $work: 'Work Sans', sans-serif
 $eczar: 'Eczar', serif
+$break-height-low-res: 780px
+$break-width-mobile: 775px
+
 
 html
   font-size: 10px
@@ -8,168 +11,184 @@ html
 
 .head-wrap
   z-index: 10
-  background: white
-  padding: 30px 0
-  box-shadow: 4px 0px 10px -2px #b3b3b3
+  // background: white
+  // padding: 30px 0
+  // box-shadow: 4px 0px 10px -2px #b3b3b3
   display: flex
   flex-direction: column
   height: 100vh
   width: 350px
   position: fixed
 
-  .site-nav
-    ul
-      list-style: none
-      font-family: $work
-      margin: 0 75px 15px 60px
-      padding: 0 15px 0 0
-      text-align: left
-      line-height: 30px
-
-      li
-        margin-bottom: 2px
-        font-size: 2rem
-
-        &:last-child
-            margin-bottom: 0
-
-  .profile-pic
-    +hide-text
-    background:
-      image: url(/assets/img/headshot_3.png)
-      repeat: no-repeat
-      position: left
-      height: 150px
-      size: contain
-    padding-right: 2rem
-    background-color: white
-    margin: 0 0 0 60px
-    height: 20%
-
-  .menu
+  .mobile-nav
     display: none
 
-
-
-  .sidebar-content
+  header
+    width: 350px
+    background: white
+    padding: 30px 0
+    box-shadow: 4px 0px 10px -2px #b3b3b3
     display: flex
     flex-direction: column
-    height: 40%
-    .firstName
-      font-family: $eczar
-      font-weight: normal
-      color: #444444
-      font-size: 5rem
-      color: black
-      margin: 25px 0 0 60px
+    height: 100vh
+    position: absolute
 
-    .lastName
-      font-family: $eczar
-      font-weight: normal
-      color: #444444
-      font-size: 5rem
-      color: black
+
+    .site-nav
+      ul
+        list-style: none
+        font-family: $work
+        margin: 0 75px 15px 60px
+        padding: 0 15px 0 0
+        text-align: left
+        line-height: 30px
+
+        li
+          margin-bottom: 2px
+          font-size: 2rem
+
+          &:last-child
+              margin-bottom: 0
+
+    .profile-pic
+      +hide-text
+      background:
+        image: url(/assets/img/headshot_3.png)
+        repeat: no-repeat
+        position: left
+        height: 150px
+        size: contain
+      padding-right: 2rem
+      background-color: white
       margin: 0 0 0 60px
+      height: 20%
+      position: relative
 
-    .job
-      font-family: $work
-      font-size: 2rem
-      margin: 45px 0 0 60px
-      font-weight: 300
+    .sidebar-content
+      display: flex
+      flex-direction: column
+      height: 40%
 
 
-    .jobOne
-      font-family: $work
-      font-size: 2rem
-      margin: 15px 0 0 60px
-      font-weight: 400
+      .firstName
+        font-family: $eczar
+        font-weight: normal
+        color: #444444
+        font-size: 5rem
+        color: black
+        margin: 25px 0 0 60px
 
-    .jobTwo
-      font-family: $work
-      font-size: 2rem
-      margin: 10px 0 0 60px
-      font-weight: 400
+      .lastName
+        font-family: $eczar
+        font-weight: normal
+        color: #444444
+        font-size: 5rem
+        color: black
+        margin: 0 0 0 60px
 
-    .oneLiner
-      font-family: $work
-      word-wrap: break-word
-      font-size: 1.8rem
-      margin: 60px 20px 0 60px
-      padding-right: 20px
-      font-weight: 400
+      .job
+        font-family: $work
+        font-size: 2rem
+        margin: 45px 0 0 60px
+        font-weight: 300
+
+      .jobOne
+        font-family: $work
+        font-size: 2rem
+        margin: 15px 0 0 60px
+        font-weight: 400
+
+      .jobTwo
+        font-family: $work
+        font-size: 2rem
+        margin: 10px 0 0 60px
+        font-weight: 400
+
+      .oneLiner
+        font-family: $work
+        word-wrap: break-word
+        font-size: 1.8rem
+        margin: 60px 20px 0 60px
+        padding-right: 20px
+        font-weight: 400
 
     .iconGroup
       display: flex
       flex-direction: row
       flex-wrap: wrap
+      font-size: 3rem
       align: center
-      margin: 20px 0 0 60px
+      margin: 50px 0 0 60px
       width: 240px
-      // padding-top: 30px
-      // padding-left: 60px
-      // padding-right: 30px
+
       .icon
+        height: 100%
+
+      i
+        font-size: 20pt
+        align: center
+        margin: 10px 40px 5px 10px
 
 
-    i
-      font-size: 20pt
-      align: center
-      margin: 10px 40px 5px 10px
 
 
 
-  // .mobile-nav-toggle
-  //   width: 50px
-  //   height: 50px
-  //   //background: pink
-  //   margin-right: 20px
-  //   display: flex
-  //   align-items: center
-  //
-  //   span,
-  //   span:before,
-  //   span::after
-  //     content: ""
-  //     display: block
-  //     height: 2px
-  //     background: #333
-  //     position: relative
-  //
-  //   span: before
-  //     top: 10px
-  //
-  //   span: after
-  //     bottom: 17px
-  //
-  //   .sidebar-content
-  //     margin-right: 9%
-  //     font-size: 12pt
 
-// @media (max-width: 1487px)
-//   html
-//     font-size: 8px
-//
-// // @media (max-width:1181px)
-// //   html
-// //     font-size: 6px
-//
-// @media (max-width: 1100px)
-//   .home-wrap header
-//     width: auto
-//     padding: 20px 0
-//
-//     .header-position
-//       width: auto
-//       position: relative
-//       top: auto
-//       bottom: auto
-//       left: auto
-//       flex-direction: row
-//       align-items: center
-//     .site-nav,
-//     .sidebar-content
-//       display: none
-//     .profile-pic
-//       height: 45px
-//     .menu
-//       display: block
+@media (max-width: $break-width-mobile)
+  .head-wrap
+    height: auto
+    display: none
+
+
+    header
+      width: 110%
+      padding: 20px 0
+      position: relative
+      top: auto
+      bottom: auto
+      left: auto
+      margin-left: -30px
+      display: flex
+      flex-direction: row
+      align-items: center
+
+      // .mobile-nav-toggle
+      //   display: flex
+
+      .sidebar-content
+        display: none
+
+      .site-nav
+        display: none
+
+      .profile-pic
+        display: none
+        height: 45px
+        width: 50%
+
+      .iconGroup
+        display: none
+
+    .mobile-nav
+      display: block
+      transform: translateY(100%)
+
+@media (max-height: 825px)
+  .head-wrap
+    header
+      .sidebar-content
+        .firstName
+        .lastName
+        .job
+          margin: 10px 0 0 60px
+        .jobOne
+        .jobTwo
+        .oneLiner
+          margin: 30px 20px 0 60px
+      .site-nav
+      .profile-pic
+
+      .iconGroup
+        i
+          font-size: 15pt
+          margin: 0 20px 0 0

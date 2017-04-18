@@ -10,12 +10,20 @@ $eczar: 'Eczar', serif
   padding-top: 3rem
   margin-left: 350px
   width: 70%
-  display: table
+  display: flex
+  flex-direction: column
+  &:last-child
+    margin-bottom: 10rem
+
+
+  .header
+    display: none
 
   .section
     display: flex
     flex-direction: column
     flex-wrap: wrap
+
     .heading
       display: flex
       flex-direction: column
@@ -46,12 +54,137 @@ $eczar: 'Eczar', serif
         .image
 
         .title
-          font-size: 3rem
+          font-size: 2.2rem
           font-family: $work
           font-weight: 400
+          line-height: 3.5rem
+          margin: 0 1rem 0 1rem
           padding-left: 10px
+          padding-bottom: 2rem
+
         .description
-          font-size:
+          font-size: 1.5rem
           font-family: $work
           font-weight: 400
           padding-left: 10px
+          margin: 0 1rem 0 1rem
+  .footer
+    display: none
+
+@media (max-width: $break-width-mobile)
+  .project-wrap
+    .projects
+      margin-left: 0px
+      display: flex
+      flex-direction: column
+      width: auto
+      margin-top: -30px
+
+
+      .header
+        display: block
+        margin-left: -80px
+        box-shadow: 0px 8px 15px -2px #b3b3b3
+        padding-bottom: 30px
+        padding-top: 20px
+        width: 775px
+
+        .site-nav
+          display: flex
+          flex-direction: row
+          justify-content: space-around
+          .link
+            width: 30%
+            text-align: center
+            &:first-child
+              border-right: solid #c6c6c6
+              border-width: thin
+
+            &:last-child
+              border-left: solid #c6c6c6
+              border-width: thin
+
+            a
+              font-size: 18pt
+
+
+
+        .container
+          display: flex
+          flex-direction: row
+          padding-top: 5rem
+
+          .profile
+            display: flex
+            flex-direction: column
+            width: 40%
+            padding-left: 40px
+            justify-content: center
+            .profile-pic
+              +hide-text
+              background:
+                image: url(/assets/img/headshot_3.png)
+                repeat: no-repeat
+                height: 150px
+                size: contain
+              // width: 40%
+              height: 100px
+              margin-left: 15%
+
+            .name
+              padding-left: 15px
+              margin-top: 20px
+              .firstName
+                font-size: 20pt
+                font-family: $eczar
+              .lastName
+                font-size: 20pt
+                font-family: $eczar
+                padding-top: -30px
+
+
+          .sidebar-content
+            width: 60%
+            padding-right: 30px
+            font-size: 1.5rem
+            font-family: $work
+            .job
+            .jobOne
+            .jobTwo
+            .oneLiner
+
+      .section
+        margin-top: 50px
+        .container
+          .project
+            .description
+              font-size: 2rem
+
+
+
+      .footer
+        display: flex
+        flex-direction: column
+        margin-bottom: 5rem
+        margin-top: 12rem
+        width: 695px
+        hr
+          border: solid #c6c6c6
+          margin-left: -80px
+          border-width: thin
+        .madeWith
+          text-align: center
+          font-family: $work
+          font-size:
+          margin-left: -80px
+
+        .iconGroup
+          display: flex
+          flex-direction: row
+          font-size: 12pt
+          justify-content: center
+          margin-left: -80px
+          i
+            font-size: 20pt
+            align: center
+            margin: 10px 40px 5px 10px
