@@ -1,0 +1,2572 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0622,42.36629 ]
+    },
+    "properties": {
+    "Team":"Celtics",
+    "Venue":"TD Garden",
+    "StreetAddr":"100 Legends Way",
+    "City":"Boston",
+    "State":"Massachusetts",
+    "Zipcode":2114,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=42.36629&lon=-71.0622&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.00043533,40.69181019 ]
+    },
+    "properties": {
+    "Team":"Nets",
+    "Venue":"Barclays Center",
+    "StreetAddr":"60 Atlantic Ave",
+    "City":"Brooklyn",
+    "State":"New York",
+    "Zipcode":11217,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=40.6918101859135&lon=-74.0004353347618&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.994517,40.75205 ]
+    },
+    "properties": {
+    "Team":"Knicks",
+    "Venue":"Madison Square Garden",
+    "StreetAddr":"4 Pennsylvania Plaza",
+    "City":"New York",
+    "State":"New York",
+    "Zipcode":10001,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=40.75205&lon=-73.994517&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.1719923,39.9019795 ]
+    },
+    "properties": {
+    "Team":"76ers",
+    "Venue":"Wells Fargo Center",
+    "StreetAddr":"3601 S Broad St",
+    "City":"Philadelphia",
+    "State":"Pennsylvania",
+    "Zipcode":19148,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.9019795&lon=-75.1719923&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.379167,43.643333 ]
+    },
+    "properties": {
+    "Team":"Raptors",
+    "Venue":"Air Canada Centre",
+    "StreetAddr":"40 Bay St",
+    "City":"Toronto",
+    "State":"Ontario",
+    "Zipcode":null,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=43.64333&lon=-79.37917&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.6742316,41.88126188 ]
+    },
+    "properties": {
+    "Team":"Bulls",
+    "Venue":"United Center",
+    "StreetAddr":"1901 W Madison St",
+    "City":"Chicago",
+    "State":"Illinois",
+    "Zipcode":60612,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=41.8812618767454&lon=-87.6742315994294&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.5635035,41.5816388 ]
+    },
+    "properties": {
+    "Team":"Cavaliers",
+    "Venue":"Quicken Loans Arena",
+    "StreetAddr":"1 Center Ct",
+    "City":"Cleveland",
+    "State":"Ohio",
+    "Zipcode":44115,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=41.5816388&lon=-81.5635035&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.2464567,42.6963827 ]
+    },
+    "properties": {
+    "Team":"Pistons",
+    "Venue":"The Palace of Auburn Hills",
+    "StreetAddr":"6 Championship Dr",
+    "City":"Auburn Hills",
+    "State":"Michigan",
+    "Zipcode":48326,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=42.6963827&lon=-83.2464567&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.15547851,39.76408479 ]
+    },
+    "properties": {
+    "Team":"Pacers",
+    "Venue":"Bankers Life Fieldhouse",
+    "StreetAddr":"125 S Pennsylvania St",
+    "City":"Indianapolis",
+    "State":"Indiana",
+    "Zipcode":46204,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.7640847902451&lon=-86.1554785062582&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.91609187,43.04293454 ]
+    },
+    "properties": {
+    "Team":"Bucks",
+    "Venue":"Bradley Center",
+    "StreetAddr":"1001 N 4th St",
+    "City":"Milwaukee",
+    "State":"Wisconsin",
+    "Zipcode":53203,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=43.0429345384158&lon=-87.9160918739255&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.387699,33.750591 ]
+    },
+    "properties": {
+    "Team":"Hawks",
+    "Venue":"Philips Arena",
+    "StreetAddr":"1 Philips Dr",
+    "City":"Atlanta",
+    "State":"Georgia",
+    "Zipcode":30303,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=33.750591&lon=-84.387699&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.839924,35.2252286 ]
+    },
+    "properties": {
+    "Team":"Bobcats",
+    "Venue":"Time Warner Cable Arena",
+    "StreetAddr":"333 E Trade St",
+    "City":"Charlotte",
+    "State":"North Carolina",
+    "Zipcode":28202,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=35.2252286&lon=-80.839924&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.19345,25.784288 ]
+    },
+    "properties": {
+    "Team":"Heat",
+    "Venue":"AmericanAirlines Arena",
+    "StreetAddr":"601 Biscayne Bay",
+    "City":"Miami",
+    "State":"Florida",
+    "Zipcode":33132,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=25.784288&lon=-80.19345&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.3840358,28.5400608 ]
+    },
+    "properties": {
+    "Team":"Magic",
+    "Venue":"Amway Center",
+    "StreetAddr":"400 W Church St #200",
+    "City":"Orlando",
+    "State":"Florida",
+    "Zipcode":32801,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=28.5400608&lon=-81.3840358&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0209569,38.8979477 ]
+    },
+    "properties": {
+    "Team":"Wizards",
+    "Venue":"Verizon Center",
+    "StreetAddr":"601 F St NW",
+    "City":"Washington",
+    "State":"D.C.",
+    "Zipcode":20004,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=38.8979477&lon=-77.0209569&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.010407,39.74690956 ]
+    },
+    "properties": {
+    "Team":"Nuggets",
+    "Venue":"Pepsi Center",
+    "StreetAddr":"1000 Choper Cir",
+    "City":"Denver",
+    "State":"Colorado",
+    "Zipcode":80204,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.7469095597392&lon=-105.010406960632&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.27366607,44.98874433 ]
+    },
+    "properties": {
+    "Team":"Timberwolves",
+    "Venue":"Target Center",
+    "StreetAddr":"600 N 1st Ave",
+    "City":"Minneapolis",
+    "State":"Minnesota",
+    "Zipcode":55403,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=44.988744325289&lon=-93.2736660658316&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.51462231,35.46436313 ]
+    },
+    "properties": {
+    "Team":"Thunder",
+    "Venue":"Chesapeake Energy Arena",
+    "StreetAddr":"101 W Reno Ave",
+    "City":"Oklahoma City",
+    "State":"Oklahoma",
+    "Zipcode":73102,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=35.4643631264345&lon=-97.5146223076853&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.6678679,45.53210227 ]
+    },
+    "properties": {
+    "Team":"Trail Blazers",
+    "Venue":"Moda Center",
+    "StreetAddr":"1 N Center Ct St",
+    "City":"Portland",
+    "State":"Oregon",
+    "Zipcode":97227,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=45.5321022742482&lon=-122.667867922749&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.9011955,40.7682893 ]
+    },
+    "properties": {
+    "Team":"Jazz",
+    "Venue":"EnergySolutions Arena",
+    "StreetAddr":"301 S Temple ",
+    "City":"Salt Lake City",
+    "State":"Utah",
+    "Zipcode":84101,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=40.7682893&lon=-111.9011955&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.2016142,37.7500338 ]
+    },
+    "properties": {
+    "Team":"Warriors",
+    "Venue":"Oracle Arena",
+    "StreetAddr":"7000 Coliseum Way",
+    "City":"Oakland",
+    "State":"California",
+    "Zipcode":94621,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=37.7500338&lon=-122.2016142&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.2654321,34.04356319 ]
+    },
+    "properties": {
+    "Team":"Clippers",
+    "Venue":"Staples Center",
+    "StreetAddr":"1111 S Figueroa St",
+    "City":"Los Angeles",
+    "State":"California",
+    "Zipcode":90015,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=34.0435631890829&lon=-118.265432070064&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.2654321,34.04356319 ]
+    },
+    "properties": {
+    "Team":"Lakers",
+    "Venue":"Staples Center",
+    "StreetAddr":"1111 S Figueroa St",
+    "City":"Los Angeles",
+    "State":"California",
+    "Zipcode":90015,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=34.0435631890829&lon=-118.265432070064&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.071307,33.44590637 ]
+    },
+    "properties": {
+    "Team":"Suns",
+    "Venue":"US Airways Center",
+    "StreetAddr":"201 E Jefferson St",
+    "City":"Phoenix",
+    "State":"Arizona",
+    "Zipcode":85004,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=33.4459063672888&lon=-112.071307044553&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.5170765,38.64800469 ]
+    },
+    "properties": {
+    "Team":"Kings",
+    "Venue":"Sleep Train Arena",
+    "StreetAddr":"1 Sports Pkwy",
+    "City":"Sacramento",
+    "State":"California",
+    "Zipcode":95834,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=38.6480046943971&lon=-121.517076506275&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.8102072,32.79031 ]
+    },
+    "properties": {
+    "Team":"Mavericks",
+    "Venue":"American Airlines Center",
+    "StreetAddr":"2500 Victory Ave ",
+    "City":"Dallas",
+    "State":"Texas",
+    "Zipcode":75219,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=32.79031&lon=-96.8102072&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.19222209,29.70480668 ]
+    },
+    "properties": {
+    "Team":"Rockets",
+    "Venue":"Toyota Center",
+    "StreetAddr":"1510 Polk St",
+    "City":"Houston",
+    "State":"Texas",
+    "Zipcode":77002,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=29.7048066826529&lon=-95.1922220874098&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.0505263,35.1382468 ]
+    },
+    "properties": {
+    "Team":"Grizzlies",
+    "Venue":"FedExForum",
+    "StreetAddr":"191 Beale St",
+    "City":"Memphis",
+    "State":"Tennessee",
+    "Zipcode":38103,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=35.1382468&lon=-90.0505263&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.839924,35.2252286 ]
+    },
+    "properties": {
+    "Team":"Hornets",
+    "Venue":"Spectrum Center",
+    "StreetAddr":"333 E Trade St",
+    "City":"Charlotte ",
+    "State":"North Carolina",
+    "Zipcode":28202,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=35.2252286&lon=-80.839924&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -98.38098,29.44692 ]
+    },
+    "properties": {
+    "Team":"Spurs",
+    "Venue":"AT&T Center",
+    "StreetAddr":"1 AT&T Center Parkway",
+    "City":"San Antonio",
+    "State":"Texas",
+    "Zipcode":78219,
+    "League":"NBA",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=29.44692&lon=-98.38098&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.470385,33.862244 ]
+    },
+    "properties": {
+    "Team":"Braves",
+    "Venue":"Suntrust Park",
+    "StreetAddr":"755 Battery Ave",
+    "City":"Atlanta",
+    "State":"Georgia",
+    "Zipcode":30339,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=33.862244&lon=-84.470385&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.236441,25.781311 ]
+    },
+    "properties": {
+    "Team":"Marlins",
+    "Venue":"Marlins Park",
+    "StreetAddr":"501 Marlins Way",
+    "City":"Miami",
+    "State":"Florida",
+    "Zipcode":33125,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=25.781311&lon=-80.236441&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.8463111,40.755613 ]
+    },
+    "properties": {
+    "Team":"Mets",
+    "Venue":"Citi Field",
+    "StreetAddr":"123-01 Roosevelt Ave",
+    "City":"Queens",
+    "State":"New York",
+    "Zipcode":11368,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=40.755613&lon=-73.8463111&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.1667697,39.9072969 ]
+    },
+    "properties": {
+    "Team":"Phillies",
+    "Venue":"Citizens Bank Park",
+    "StreetAddr":"1 Citizens Bank Way",
+    "City":"Philadelphia",
+    "State":"Pennsylvania",
+    "Zipcode":19148,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.9072969&lon=-75.1667697&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.008529,38.8723672 ]
+    },
+    "properties": {
+    "Team":"Nationals",
+    "Venue":"Nationals Park",
+    "StreetAddr":"1500 S Capitol St SE",
+    "City":"Washington",
+    "State":"D.C.",
+    "Zipcode":20003,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=38.8723672&lon=-77.008529&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.65577109,41.9473108 ]
+    },
+    "properties": {
+    "Team":"Cubs",
+    "Venue":"Wrigley Field",
+    "StreetAddr":"1060 W Addison St",
+    "City":"Chicago",
+    "State":"Illinois",
+    "Zipcode":60613,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=41.9473108049586&lon=-87.6557710921482&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.502052,39.105479 ]
+    },
+    "properties": {
+    "Team":"Reds",
+    "Venue":"Great American Ball Park",
+    "StreetAddr":"100 Joe Nuxhall Way",
+    "City":"Cincinnati",
+    "State":"Ohio",
+    "Zipcode":45202,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.105479&lon=-84.502052&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.9733174,43.0296871 ]
+    },
+    "properties": {
+    "Team":"Brewers",
+    "Venue":"Miller Park",
+    "StreetAddr":"1 Brewers Way",
+    "City":"Milwaukee",
+    "State":"Wisconsin",
+    "Zipcode":53214,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=43.0296871&lon=-87.9733174&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.0059817,40.4469783 ]
+    },
+    "properties": {
+    "Team":"Pirates",
+    "Venue":"PNC Park",
+    "StreetAddr":"115 Federal St",
+    "City":"Pittsburgh",
+    "State":"Pennsylvania",
+    "Zipcode":15212,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=40.4469783&lon=-80.0059817&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.185776,38.636396 ]
+    },
+    "properties": {
+    "Team":"Cardinals",
+    "Venue":"Busch Stadium",
+    "StreetAddr":"700 Clark Ave",
+    "City":"St. Louis",
+    "State":"Missouri",
+    "Zipcode":63102,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=38.636396&lon=-90.185776&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.0668548,33.4452075 ]
+    },
+    "properties": {
+    "Team":"Diamondbacks",
+    "Venue":"Chase Field",
+    "StreetAddr":"401 E Jefferson St",
+    "City":"Phoenix",
+    "State":"Arizona",
+    "Zipcode":85004,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=33.4452075&lon=-112.0668548&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.9942778,39.75642539 ]
+    },
+    "properties": {
+    "Team":"Rockies",
+    "Venue":"Coors Field",
+    "StreetAddr":"2001 Blake St",
+    "City":"Denver",
+    "State":"Colorado",
+    "Zipcode":80205,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.7564253888024&lon=-104.994277787611&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.240765,34.0725031 ]
+    },
+    "properties": {
+    "Team":"Dodgers",
+    "Venue":"Dodger Stadium",
+    "StreetAddr":"1000 Vin Scully Ave",
+    "City":"Los Angeles",
+    "State":"California",
+    "Zipcode":90012,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=34.0725031&lon=-118.240765&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.165331,32.722628 ]
+    },
+    "properties": {
+    "Team":"Padres",
+    "Venue":"PETCO Park",
+    "StreetAddr":"100 Park Blvd",
+    "City":"San Diego",
+    "State":"California",
+    "Zipcode":92101,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=32.722628&lon=-117.165331&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3887881,37.78082454 ]
+    },
+    "properties": {
+    "Team":"Giants",
+    "Venue":"AT&T Park",
+    "StreetAddr":"24 Willie Mays Plaza",
+    "City":"San Francisco",
+    "State":"California",
+    "Zipcode":94107,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=37.7808245413127&lon=-122.388788131709&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.62019176,39.28517464 ]
+    },
+    "properties": {
+    "Team":"Orioles",
+    "Venue":"Oriole Park at Camden Yards",
+    "StreetAddr":"333 W Camden St",
+    "City":"Baltimore",
+    "State":"Maryland",
+    "Zipcode":21201,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.2851746394465&lon=-76.6201917567086&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0986808,42.3467232 ]
+    },
+    "properties": {
+    "Team":"Red Sox",
+    "Venue":"Fenway Park",
+    "StreetAddr":"4 Yawkey Way",
+    "City":"Boston",
+    "State":"Massachusetts",
+    "Zipcode":2215,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=42.3467232&lon=-71.0986808&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.92869307,40.82925324 ]
+    },
+    "properties": {
+    "Team":"Yankees",
+    "Venue":"Yankee Stadium",
+    "StreetAddr":"1 E 161st St",
+    "City":"Bronx",
+    "State":"New York",
+    "Zipcode":10451,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=40.8292532419671&lon=-73.9286930671347&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.6513777,27.7683169 ]
+    },
+    "properties": {
+    "Team":"Rays",
+    "Venue":"Tropicana Field",
+    "StreetAddr":"1 Tropicana Dr",
+    "City":"St Petersburg",
+    "State":"Florida",
+    "Zipcode":33705,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=27.7683169&lon=-82.6513777&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.389167,43.641389 ]
+    },
+    "properties": {
+    "Team":"Blue Jays",
+    "Venue":"Rogers Centre",
+    "StreetAddr":"1 Blue Jays Way",
+    "City":"Toronto",
+    "State":"Ontario",
+    "Zipcode":null,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=43.64139&lon=-79.38917&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.63619229,41.83079142 ]
+    },
+    "properties": {
+    "Team":"White Sox",
+    "Venue":"Guaranteed Rate Field",
+    "StreetAddr":"333 W 35th St",
+    "City":"Chicago",
+    "State":"Illinois",
+    "Zipcode":60616,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=41.830791415575&lon=-87.636192286961&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.6852806,41.4955382 ]
+    },
+    "properties": {
+    "Team":"Indians",
+    "Venue":"Progressive Field",
+    "StreetAddr":"2401 Ontario St",
+    "City":"Cleveland",
+    "State":"Ohio",
+    "Zipcode":44115,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=41.4955382&lon=-81.6852806&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.0487985,42.3391805 ]
+    },
+    "properties": {
+    "Team":"Tigers",
+    "Venue":"Comerica Park",
+    "StreetAddr":"2100 Woodward Ave",
+    "City":"Detroit",
+    "State":"Michigan",
+    "Zipcode":48201,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=42.3391805&lon=-83.0487985&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.4907125,39.0455275 ]
+    },
+    "properties": {
+    "Team":"Royals",
+    "Venue":"Kauffman Stadium",
+    "StreetAddr":"1 Royal Way",
+    "City":"Kansas City",
+    "State":"Missouri",
+    "Zipcode":64129,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.0455275&lon=-94.4907125&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.283965,44.971974 ]
+    },
+    "properties": {
+    "Team":"Twins",
+    "Venue":"Target Field",
+    "StreetAddr":"1 Twins Way",
+    "City":"Minneapolis",
+    "State":"Minnesota",
+    "Zipcode":55403,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=44.971974&lon=-93.283965&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.35660733,29.7569996 ]
+    },
+    "properties": {
+    "Team":"Astros",
+    "Venue":"Minute Maid Park",
+    "StreetAddr":"501 Crawford St",
+    "City":"Houston",
+    "State":"Texas",
+    "Zipcode":77002,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=29.7569996042453&lon=-95.3566073332059&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.8825792,33.8002814 ]
+    },
+    "properties": {
+    "Team":"Angels",
+    "Venue":"Angel Stadium of Anaheim",
+    "StreetAddr":"2000 E Gene Autry Way",
+    "City":"Anaheim",
+    "State":"California",
+    "Zipcode":92806,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=33.8002814&lon=-117.8825792&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.2016142,37.7500338 ]
+    },
+    "properties": {
+    "Team":"Athletics",
+    "Venue":"Oakland Coliseum",
+    "StreetAddr":"7000 Coliseum Way",
+    "City":"Oakland",
+    "State":"California",
+    "Zipcode":94621,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=37.7500338&lon=-122.2016142&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.333045,47.5915075 ]
+    },
+    "properties": {
+    "Team":"Mariners",
+    "Venue":"Safeco Field",
+    "StreetAddr":"1250 1st Avenue South",
+    "City":"Seattle",
+    "State":"Washington",
+    "Zipcode":98134,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=47.5915075&lon=-122.333045&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.08102804,32.74991345 ]
+    },
+    "properties": {
+    "Team":"Rangers",
+    "Venue":"Gobal Life Park in Arlington",
+    "StreetAddr":"1000 Ballpark Way",
+    "City":"Arlington",
+    "State":"Texas",
+    "Zipcode":76011,
+    "League":"MLB",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=32.7499134541465&lon=-97.0810280351661&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -78.7915043,42.7737487 ]
+    },
+    "properties": {
+    "Team":"Bills",
+    "Venue":"New Era Field",
+    "StreetAddr":"1 Bills Dr ",
+    "City":"Orchard Park",
+    "State":"New York",
+    "Zipcode":14127,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=42.7737487&lon=-78.7915043&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.247066,25.946322 ]
+    },
+    "properties": {
+    "Team":"Dolphins",
+    "Venue":"Hard Rock Stadium",
+    "StreetAddr":"347 Don Shula Dr",
+    "City":"Miami Gardens",
+    "State":"Florida",
+    "Zipcode":33056,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=25.946322&lon=-80.247066&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.26768386,42.09278116 ]
+    },
+    "properties": {
+    "Team":"Patriots",
+    "Venue":"Gillette Stadium",
+    "StreetAddr":"1 Patriot Pl",
+    "City":"Foxborough",
+    "State":"Massachusetts",
+    "Zipcode":2035,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=42.092781163752&lon=-71.2676838565068&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.102949,40.839748 ]
+    },
+    "properties": {
+    "Team":"Jets",
+    "Venue":"MetLife Stadium",
+    "StreetAddr":"1 MetLife Stadium Dr",
+    "City":"East Rutherford",
+    "State":"New Jersey",
+    "Zipcode":7073,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=40.839748&lon=-74.102949&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.622665,39.2777779 ]
+    },
+    "properties": {
+    "Team":"Ravens",
+    "Venue":"M&T Bank Stadium",
+    "StreetAddr":"1101 Russell St",
+    "City":"Baltimore",
+    "State":"Maryland",
+    "Zipcode":21230,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.2777779&lon=-76.622665&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.502052,39.105479 ]
+    },
+    "properties": {
+    "Team":"Bengals",
+    "Venue":"Paul Brown Stadium",
+    "StreetAddr":"1 Paul Brown Stadium",
+    "City":"Cincinnati",
+    "State":"Ohio",
+    "Zipcode":45202,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.105479&lon=-84.502052&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.675394,41.508496 ]
+    },
+    "properties": {
+    "Team":"Browns",
+    "Venue":"FirstEnergy Stadium",
+    "StreetAddr":"100 Alfred Lerner Way",
+    "City":"Cleveland",
+    "State":"Ohio",
+    "Zipcode":44114,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=41.508496&lon=-81.675394&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.0148417,40.4453591 ]
+    },
+    "properties": {
+    "Team":"Steelers",
+    "Venue":"Heinz Field",
+    "StreetAddr":"100 Art Roonery Ave",
+    "City":"Pittsburgh",
+    "State":"Pennsylvania",
+    "Zipcode":15212,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=40.4453591&lon=-80.0148417&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.40041,29.682326 ]
+    },
+    "properties": {
+    "Team":"Texans",
+    "Venue":"NRG Stadium",
+    "StreetAddr":"NRG Pkway ",
+    "City":"Houston",
+    "State":"Texas",
+    "Zipcode":77054,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=29.682326&lon=-95.40041&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.16459958,39.76088373 ]
+    },
+    "properties": {
+    "Team":"Colts",
+    "Venue":"Lucas Oil Stadium",
+    "StreetAddr":"500 S Capitol Ave",
+    "City":"Indianapolis",
+    "State":"Indiana",
+    "Zipcode":46225,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.7608837288853&lon=-86.1645995789853&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.63735,30.3239761 ]
+    },
+    "properties": {
+    "Team":"Jaguars",
+    "Venue":"EverBank Field",
+    "StreetAddr":"1 Everbank Field Dr",
+    "City":"Jacksonville",
+    "State":"Florida",
+    "Zipcode":32202,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=30.3239761&lon=-81.63735&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.7713581,36.1665537 ]
+    },
+    "properties": {
+    "Team":"Titans",
+    "Venue":"Nissan Stadium",
+    "StreetAddr":"1 Titans Way",
+    "City":"Nashville",
+    "State":"Tennessee",
+    "Zipcode":32713,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=36.1665537&lon=-86.7713581&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.017769,39.68593493 ]
+    },
+    "properties": {
+    "Team":"Broncos",
+    "Venue":"Sports Authority Field at Mile High",
+    "StreetAddr":"1701 Bryant St",
+    "City":"Denver",
+    "State":"Colorado",
+    "Zipcode":80204,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.6859349303193&lon=-105.017768991936&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.4865252,39.04892054 ]
+    },
+    "properties": {
+    "Team":"Chiefs",
+    "Venue":"Arrowhead Stadium",
+    "StreetAddr":"1 Arrowhead Dr",
+    "City":"Kansas City",
+    "State":"Missouri",
+    "Zipcode":64129,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.0489205423566&lon=-94.4865252007854&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.2016142,37.7500338 ]
+    },
+    "properties": {
+    "Team":"Raiders",
+    "Venue":"Oakland Coliseum",
+    "StreetAddr":"7000 Coliseum Way",
+    "City":"Oakland",
+    "State":"California",
+    "Zipcode":94621,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=37.7500338&lon=-122.2016142&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.12026,32.7816393 ]
+    },
+    "properties": {
+    "Team":"Chargers",
+    "Venue":"Qualcomm Stadium",
+    "StreetAddr":"9449 Friars Rd",
+    "City":"San Diego",
+    "State":"California",
+    "Zipcode":92108,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=32.7816393&lon=-117.12026&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.084801,32.756259 ]
+    },
+    "properties": {
+    "Team":"Cowboys",
+    "Venue":"AT&T Stadium",
+    "StreetAddr":"1 AT&T Way",
+    "City":"Arlington",
+    "State":"Texas",
+    "Zipcode":76011,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=32.756259&lon=-97.084801&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.102949,40.839748 ]
+    },
+    "properties": {
+    "Team":"Giants",
+    "Venue":"MetLife Stadium",
+    "StreetAddr":"1 MetLife Stadium Dr",
+    "City":"East Rutherford",
+    "State":"New Jersey",
+    "Zipcode":7073,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=40.839748&lon=-74.102949&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.158025,39.922429 ]
+    },
+    "properties": {
+    "Team":"Eagles",
+    "Venue":"Lincoln Financial Field",
+    "StreetAddr":"1 Lincoln Financial Field Way",
+    "City":"Philadelphia",
+    "State":"Pennsylvania",
+    "Zipcode":19148,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.922429&lon=-75.158025&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.886146,38.91592 ]
+    },
+    "properties": {
+    "Team":"Redskins",
+    "Venue":"FedExField",
+    "StreetAddr":"1600 Fedex Way",
+    "City":"Hyattsville",
+    "State":"Maryland",
+    "Zipcode":20785,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=38.91592&lon=-76.886146&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.61411256,41.86480833 ]
+    },
+    "properties": {
+    "Team":"Bears",
+    "Venue":"Soldier Field",
+    "StreetAddr":"1410 Museum Campus Dr",
+    "City":"Chicago",
+    "State":"Illinois",
+    "Zipcode":60605,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=41.8648083325261&lon=-87.6141125583065&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.0455224,42.3398435 ]
+    },
+    "properties": {
+    "Team":"Lions",
+    "Venue":"Ford Field",
+    "StreetAddr":"2000 Brush St",
+    "City":"Detroit",
+    "State":"Michigan",
+    "Zipcode":48226,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=42.3398435&lon=-83.0455224&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.06112506,44.5030161 ]
+    },
+    "properties": {
+    "Team":"Packers",
+    "Venue":"Lambeau Field",
+    "StreetAddr":"1265 Lombardi Ave",
+    "City":"Green Bay",
+    "State":"Wisconsin",
+    "Zipcode":54304,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=44.5030161018205&lon=-88.0611250633549&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.25752147,44.97354377 ]
+    },
+    "properties": {
+    "Team":"Vikings",
+    "Venue":"U.S. Bank Stadium",
+    "StreetAddr":"401 Chicago Ave",
+    "City":"Minneapolis",
+    "State":"Minnesota",
+    "Zipcode":55415,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=44.973543773495&lon=-93.257521471661&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.4024158,33.7555675 ]
+    },
+    "properties": {
+    "Team":"Falcons",
+    "Venue":"Mercedes-Benz Stadium",
+    "StreetAddr":"35 Northside Dr NW",
+    "City":"Atlanta",
+    "State":"Georgia",
+    "Zipcode":30313,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=33.7555675&lon=-84.4024158&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.8529302,35.225893 ]
+    },
+    "properties": {
+    "Team":"Panthers",
+    "Venue":"Bank of America Stadium",
+    "StreetAddr":"800 S Mint St",
+    "City":"Charlotte",
+    "State":"North Carolina",
+    "Zipcode":28202,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=35.225893&lon=-80.8529302&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.08159309,29.95255813 ]
+    },
+    "properties": {
+    "Team":"Saints",
+    "Venue":"Mercedes-Benz Superdome",
+    "StreetAddr":"1500 Sugar Bowl Dr",
+    "City":"New Orleans",
+    "State":"Louisiana",
+    "Zipcode":70112,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=29.9525581333356&lon=-90.0815930942959&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.5029725,27.9787156 ]
+    },
+    "properties": {
+    "Team":"Buccaneers",
+    "Venue":"Raymond James Stadium",
+    "StreetAddr":"4201 N Dale Mabry Hwy",
+    "City":"Tampa",
+    "State":"Florida",
+    "Zipcode":33607,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=27.9787156&lon=-82.5029725&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.2628275,33.5287175 ]
+    },
+    "properties": {
+    "Team":"Cardinals",
+    "Venue":"University of Phoenix Stadium",
+    "StreetAddr":"1 Cardinals Dr",
+    "City":"Glendale",
+    "State":"Arizona",
+    "Zipcode":85305,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=33.5287175&lon=-112.2628275&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.2828339,34.01343285 ]
+    },
+    "properties": {
+    "Team":"Rams",
+    "Venue":"Los Angeles Memorial Coliseum",
+    "StreetAddr":"3911 S Figueroa St",
+    "City":"Los Angeles",
+    "State":"California",
+    "Zipcode":90037,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=34.0134328504714&lon=-118.282833878912&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.957963,37.352976 ]
+    },
+    "properties": {
+    "Team":"49ers",
+    "Venue":"Levi's Stadium",
+    "StreetAddr":"4900 Marie P DeBartolo Way",
+    "City":"Santa Clara",
+    "State":"California",
+    "Zipcode":95054,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=37.352976&lon=-121.957963&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3315913,47.59544 ]
+    },
+    "properties": {
+    "Team":"Seahawks",
+    "Venue":"CenturyLink Field",
+    "StreetAddr":"800 Occidental Ave S",
+    "City":"Seattle",
+    "State":"Washington",
+    "Zipcode":98134,
+    "League":"NFL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=47.59544&lon=-122.3315913&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.14648291,40.77268221 ]
+    },
+    "properties": {
+    "Team":"Devils",
+    "Venue":"Prudential Center",
+    "StreetAddr":"25 Lafayette St",
+    "City":"Newark",
+    "State":"New Jersey",
+    "Zipcode":7102,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=40.7726822119399&lon=-74.1464829142138&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.58717693,40.72028425 ]
+    },
+    "properties": {
+    "Team":"Islanders",
+    "Venue":"Nassau Veterans Memorial Coliseum",
+    "StreetAddr":"1255 Hempstead Turnpike",
+    "City":"Uniondale",
+    "State":"New York",
+    "Zipcode":11553,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=40.720284246227&lon=-73.5871769278966&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.994517,40.75205 ]
+    },
+    "properties": {
+    "Team":"Rangers",
+    "Venue":"Madison Square Garden",
+    "StreetAddr":"4 Pennsylvania Plaza",
+    "City":"New York",
+    "State":"New York",
+    "Zipcode":10001,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=40.75205&lon=-73.994517&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.1719923,39.9019795 ]
+    },
+    "properties": {
+    "Team":"Flyers",
+    "Venue":"Wells Fargo Center",
+    "StreetAddr":"3601 S Broad St",
+    "City":"Philadelphia",
+    "State":"Pennsylvania",
+    "Zipcode":19148,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.9019795&lon=-75.1719923&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.9895838,40.4394889 ]
+    },
+    "properties": {
+    "Team":"Penguins",
+    "Venue":"Consol Energy Center",
+    "StreetAddr":"1001 Fifth Ave",
+    "City":"Pittsburgh",
+    "State":"Pennsylvania",
+    "Zipcode":15219,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=40.4394889&lon=-79.9895838&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0622,42.36629 ]
+    },
+    "properties": {
+    "Team":"Bruins",
+    "Venue":"TD Garden",
+    "StreetAddr":"100 Legends Way",
+    "City":"Boston",
+    "State":"Massachusetts",
+    "Zipcode":2114,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=42.36629&lon=-71.0622&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -78.8766,42.875 ]
+    },
+    "properties": {
+    "Team":"Sabres",
+    "Venue":"KeyBank Center",
+    "StreetAddr":"1 Seymour H Knox III Plaza",
+    "City":"Buffalo",
+    "State":"New York",
+    "Zipcode":14203,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=42.875&lon=-78.8766&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.569444,45.496111 ]
+    },
+    "properties": {
+    "Team":"Canadiens",
+    "Venue":"Bell Centre",
+    "StreetAddr":"1909 Avenue des Canadiens-de-Montreal",
+    "City":"Montreal",
+    "State":"Quebec",
+    "Zipcode":null,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=45.49611&lon=-73.56944&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.927222,45.296944 ]
+    },
+    "properties": {
+    "Team":"Senators",
+    "Venue":"Canadian Tire Centre",
+    "StreetAddr":"1000 Palladium Dr",
+    "City":"Ottawa",
+    "State":"Ontario",
+    "Zipcode":null,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=45.29694&lon=-75.92722&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.379167,43.643333 ]
+    },
+    "properties": {
+    "Team":"Maple Leafs",
+    "Venue":"Air Canada Centre",
+    "StreetAddr":"40 Bay St",
+    "City":"Toronto",
+    "State":"Ontario",
+    "Zipcode":null,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=43.64333&lon=-79.37917&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -78.7234095,35.8030614 ]
+    },
+    "properties": {
+    "Team":"Hurricanes",
+    "Venue":"PNC Arena",
+    "StreetAddr":"1400 Edwards Mill Rd",
+    "City":"Raleigh",
+    "State":"North Carolina",
+    "Zipcode":27607,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=35.8030614&lon=-78.7234095&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.3253541,26.1587637 ]
+    },
+    "properties": {
+    "Team":"Panthers",
+    "Venue":"BB&T Center",
+    "StreetAddr":"1 Panther Pkwy",
+    "City":"Sunrise",
+    "State":"Florida",
+    "Zipcode":33323,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=26.1587637&lon=-80.3253541&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.4517727,27.9427102 ]
+    },
+    "properties": {
+    "Team":"Lightning",
+    "Venue":"Amalie Arena",
+    "StreetAddr":"401 Channelside Dr",
+    "City":"Tampa",
+    "State":"Florida",
+    "Zipcode":33602,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=27.9427102&lon=-82.4517727&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0209569,38.8979477 ]
+    },
+    "properties": {
+    "Team":"Capitals",
+    "Venue":"Verizon Center",
+    "StreetAddr":"601 F St NW",
+    "City":"Washington",
+    "State":"D.C.",
+    "Zipcode":20004,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=38.8979477&lon=-77.0209569&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.143611,49.892778 ]
+    },
+    "properties": {
+    "Team":"Jets",
+    "Venue":"MTS Centre",
+    "StreetAddr":"345 Graham Ave",
+    "City":"Winnipeg",
+    "State":"Manitoba",
+    "Zipcode":null,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=49.89278&lon=-97.14361&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.6742316,41.88126188 ]
+    },
+    "properties": {
+    "Team":"Blackhawks",
+    "Venue":"United Center",
+    "StreetAddr":"1901 W Madison St",
+    "City":"Chicago",
+    "State":"Illinois",
+    "Zipcode":60612,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=41.8812618767454&lon=-87.6742315994294&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.00657783,39.96852415 ]
+    },
+    "properties": {
+    "Team":"Blue Jackets",
+    "Venue":"Nationwide Arena",
+    "StreetAddr":"200 W Nationwide Blvd",
+    "City":"Columbus",
+    "State":"Ohio",
+    "Zipcode":43215,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.9685241459791&lon=-83.006577834507&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.051131,42.332339 ]
+    },
+    "properties": {
+    "Team":"Red Wings",
+    "Venue":"Joe Louis Arena",
+    "StreetAddr":"19 Steve Yzerman Dr",
+    "City":"Detroit",
+    "State":"Michigan",
+    "Zipcode":48226,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=42.332339&lon=-83.051131&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.7785751,36.1591449 ]
+    },
+    "properties": {
+    "Team":"Predators",
+    "Venue":"Bridgestone Arena",
+    "StreetAddr":"501 Broadway ",
+    "City":"Nashville",
+    "State":"Tennessee",
+    "Zipcode":32703,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=36.1591449&lon=-86.7785751&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.20261667,38.62643174 ]
+    },
+    "properties": {
+    "Team":"Blues",
+    "Venue":"Scottrade Center",
+    "StreetAddr":"1401 Clark Ave",
+    "City":"St. Louis",
+    "State":"Missouri",
+    "Zipcode":63103,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=38.6264317426794&lon=-90.2026166653923&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.051944,51.0375 ]
+    },
+    "properties": {
+    "Team":"Flames",
+    "Venue":"Scotiabank Saddledome",
+    "StreetAddr":"555 Saddledome Rise SE",
+    "City":"Calgary",
+    "State":"Alberta",
+    "Zipcode":null,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=51.0375&lon=-114.0519&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.010407,39.74690956 ]
+    },
+    "properties": {
+    "Team":"Avalanche",
+    "Venue":"Pepsi Center",
+    "StreetAddr":"1000 Chopper Cir",
+    "City":"Denver",
+    "State":"Colorado",
+    "Zipcode":80204,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=39.7469095597392&lon=-105.010406960632&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.456111,53.571389 ]
+    },
+    "properties": {
+    "Team":"Oilers",
+    "Venue":"Northlands Coliseum",
+    "StreetAddr":"7424 118 Ave",
+    "City":"Edmonton",
+    "State":"Alberta",
+    "Zipcode":null,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=53.57139&lon=-113.4561&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.10113344,44.94386926 ]
+    },
+    "properties": {
+    "Team":"Wild",
+    "Venue":"Xcel Energy Center",
+    "StreetAddr":"199 W Kellogg Blvd",
+    "City":"St. Paul",
+    "State":"Minnesota",
+    "Zipcode":55102,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=44.9438692626677&lon=-93.1011334410947&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -123.108889,49.277778 ]
+    },
+    "properties": {
+    "Team":"Canucks",
+    "Venue":"Rogers Arena",
+    "StreetAddr":"800 Griffiths Way",
+    "City":"Vancouver",
+    "State":"British Columbia",
+    "Zipcode":null,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=49.27778&lon=-123.1089&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.8765765,33.8078512 ]
+    },
+    "properties": {
+    "Team":"Ducks",
+    "Venue":"Honda Center",
+    "StreetAddr":"2695 E Katella Ave",
+    "City":"Anaheim",
+    "State":"California",
+    "Zipcode":92806,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=33.8078512&lon=-117.8765765&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.8102072,32.79031 ]
+    },
+    "properties": {
+    "Team":"Stars",
+    "Venue":"American Airlines Center",
+    "StreetAddr":"2500 Victory Ave ",
+    "City":"Dallas",
+    "State":"Texas",
+    "Zipcode":75219,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=32.79031&lon=-96.8102072&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.2654321,34.04356319 ]
+    },
+    "properties": {
+    "Team":"Kings",
+    "Venue":"Staples Center",
+    "StreetAddr":"1111 S Figueroa St",
+    "City":"Los Angeles",
+    "State":"California",
+    "Zipcode":90015,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=34.0435631890829&lon=-118.265432070064&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.26129,33.5318712 ]
+    },
+    "properties": {
+    "Team":"Coyotes",
+    "Venue":"Gila River Arena",
+    "StreetAddr":"9400 W  Maryland Ave",
+    "City":"Glendale",
+    "State":"Arizona",
+    "Zipcode":85305,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=33.5318712&lon=-112.26129&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.9012596,37.3327938 ]
+    },
+    "properties": {
+    "Team":"Sharks",
+    "Venue":"SAP Center",
+    "StreetAddr":"525 W Santa Clara St",
+    "City":"San Jose",
+    "State":"California",
+    "Zipcode":95113,
+    "League":"NHL",
+    "Final API":"https://transit.land/api/v1/stops.geojson?lat=37.3327938&lon=-121.9012596&r=805&total=true&per_page=200"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"                        ",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Team":"                        ",
+    "Venue":"",
+    "StreetAddr":"",
+    "City":"",
+    "State":"",
+    "Zipcode":null,
+    "League":"",
+    "Final API":""
+    }
+  }
+]
+}
